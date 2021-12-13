@@ -33,3 +33,24 @@ with open("C:/Users/zy/Desktop/新建文本文档.txt","r",encoding='utf-8' ,err
 a = [1,2,3,4]
 b = [e+200 for e in a]
 print(b)
+# def decrator(*dargs, **dkargs):
+#     def wrapper(func):
+#         def _wrapper(*args, **kargs):
+#             print("装饰器参数:", dargs, dkargs)
+#             print("函数参数:", args, kargs)
+#             return func(*args, **kargs)
+#         return _wrapper
+#     return wrapper
+#  def decrator0(func):
+#     def wrap(*args, **kwargs):
+#         start_time = time.time()
+#         res = func(*args, **kwargs)
+#         end_time = time.time()
+#         print('运行时间为', end_time-start_time)
+#         return res
+#     return wrap
+# @decrator0
+# def test(sr):
+#     print(sr)
+#     return sr
+# test("ni")

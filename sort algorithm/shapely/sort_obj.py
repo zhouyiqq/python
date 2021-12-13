@@ -7,18 +7,16 @@ class sort_obj():
         self.li = li
 
     def run_time(func):
-
-        start_time = time.time()
-        func
-        end_time = time.time()
-        print("程序结束用时%fs" % (end_time - start_time))
-        return func
-
-
+        def wraper(*args, **kwargs):
+            t1 = time.time()
+            result = func(*args, **kwargs)
+            t2 = time.time()
+            print('%s running time %s　second' % (func.__name__, t2 - t1))
+            return result
+        return wraper
     def li_random(self,li):
         #将列表随机排序
         return random.shuffle(li)
-    @run_time
     def bubble_sort(self):
         # 冒泡排序,对比相邻两个数，满足条件，然后交换位置
         li = self.li
@@ -27,7 +25,6 @@ class sort_obj():
                 if li[j] > li[j + 1]:
                     li[j], li[j + 1] = li[j + 1], li[j]
         return li
-
     def insert_sort(self):
         #插入排序
         li = self.li
@@ -38,7 +35,7 @@ class sort_obj():
                 li[j + 1] = li[j]
                 j -= 1  # 这是一个顺序移动寻找位置插入的过程
             li[j + 1] = tmp  # 插入
-            return li
+        return li
 
     def partition_sort(self):
         '''快速排序，归位函数'''
@@ -75,8 +72,8 @@ class sort_obj():
                     min_loc = j
             li[i], li[min_loc] = li[min_loc], li[i]  # 将无序列表最小的那个数交换位置
         return li
-
-    def insert_sort_gap(self,gap):
+    @run_time
+    def insert_sort_gap(self,gap):#把无序区里的数放在有序区里冒泡
         '''这是插入排序，gap是每组数的相隔数'''
         li = self.li
         for i in range(gap, len(li)):
@@ -88,19 +85,8 @@ class sort_obj():
             li[j + gap] = tmp
         return li
 
-    # def shell_sort(self,li):
-    """希尔排序是把记录按下标的一定增量分组，对每组使用直接插入排序算法排序；
-           # 随着增量逐渐减少，每组包含的关键词越来越多，当增量减至1时，整个文件恰被分成一组，算法便终止。"""
-    # li = self.li
-    #     d = len(li) // 2
-    #     while d >= 1:
-    #         print(d)
-    #         insert_sort_gap(li, d)
-    #         d //= 2
-    # return li
-
 if __name__ == "__main__":
-    li = [random.randint(0, 1000) for i in range(100)]
+    li = [random.randint(0, 1000) for i in range(1000)]
     sort = sort_obj(li)
     print(li)
-    print(sort.bubble_sort())
+    print(sort.insert_sort_gap(1))
