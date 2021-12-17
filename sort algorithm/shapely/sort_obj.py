@@ -3,7 +3,7 @@
 import random
 import time
 class sort_obj():
-    def __init__(self,li):
+    def __init__(self,li=None):
         self.li = li
 
     def run_time(func):
@@ -12,6 +12,7 @@ class sort_obj():
             result = func(*args, **kwargs)
             t2 = time.time()
             print('%s running time %s　second' % (func.__name__, t2 - t1))
+            print(result)
             return result
         return wraper
     def li_random(self,li):
@@ -72,7 +73,6 @@ class sort_obj():
                     min_loc = j
             li[i], li[min_loc] = li[min_loc], li[i]  # 将无序列表最小的那个数交换位置
         return li
-    @run_time
     def insert_sort_gap(self,gap):#把无序区里的数放在有序区里冒泡
         '''这是插入排序，gap是每组数的相隔数'''
         li = self.li
@@ -85,8 +85,38 @@ class sort_obj():
             li[j + gap] = tmp
         return li
 
+    def partition(self,li, left, right):
+        tmp = li[left]#以下标为left的为基准
+        while left < right:
+            while left < right and li[right] >= tmp:#遍历基准left右边的所有数
+                right -= 1
+            li[left] = li[right]#如果右边有大于基准的数，把右边的值写到左边的空位上
+            while left < right and li[left] <= tmp:#遍历基准left左边的所有数
+                left += 1
+            li[right] = li[left]#如果左边有小于基准的数，把左边的值写到右边的空位上
+        li[left] = tmp#把tmp归位
+        return left
+    def quick_sort(self,li,left,right):#快速排序
+        if left < right:#至少两个元素
+            mid = self.partition(li,left,right)#这个函数是将选择的数归位
+            self.quick_sort(li,left,mid-1)#递归左边的作为一个模块
+            self.quick_sort(li,mid+1,right)#递归右边的作为一个模块
+        return li
+    def heapsort(self,arr=None):#堆排序
+        #将arr视为完全二叉数
+        #至下而上的搜索整个二叉树
+        #找到最大的数放在堆顶
+        #从堆顶取出最大数加入到新列表中
+        #再重复以上步骤
+        #堆的定义左边的比右边的大，上边的比下边的大
+        arr = self.li
+        global arrLen #定义一个全局变量，树的长度
+        arrLen = len(arr)
+
 if __name__ == "__main__":
-    li = [random.randint(0, 1000) for i in range(1000)]
-    sort = sort_obj(li)
+    li = [random.randint(0, 100) for i in range(10)]
+    sort = sort_obj()
     print(li)
-    print(sort.insert_sort_gap(1))
+    print(sort.heapsort())
+
+
