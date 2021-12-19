@@ -85,7 +85,7 @@ class sort_obj():
                 j -= gap
             li[j + gap] = tmp
         return li
-
+#=======================================================================================================================
     def partition(self,li, left, right):
         tmp = li[left]#以下标为left的为基准
         while left < right:
@@ -161,16 +161,51 @@ class sort_obj():
         #该函数取列表li前k个大的元素
         heap = li[0:k]#取出前k个元素
         heapq.heapify(heap)#前k个元素建立一个小根堆
-        for i in range(k,len(li)):
-            if li[i]>heap[0]:
+        for i in range(k,len(li)):#遍历剩余的元素
+            if li[i]>heap[0]:#如果剩余的元素比根节点大，就压入堆中
                 heapq.heapreplace(heap,li[i])
-        heap.sort()
+        heap.sort()#最后将堆中的元素排好序
         return heap
+    def merge(self,li,low,mid,high):
+        #归并排序，时间复杂度n*logn
+        #将列表分为两部分
+        i = low#指向前部分列表
+        j = mid + 1#指向后部分列表
+        ltmp = []#归并后的列表，所以需要额外开辟一个空间
+        while i<=mid and j<=high:#两个指针不越界
+            #li[i],li[j]对比取出小的数加入到新列表中
+            if li[i]<li[j]:
+                ltmp.append(li[i])
+                i+=1
+            else:
+                ltmp.append(li[j])
+                j+=1
+        #当上面一步执行完毕，可能有一部分列表还有数
+        # while i<=mid:
+        #     ltmp.append(li[i])
+        #     i += 1
+        # while j <= high:
+        #     ltmp.append(li[j])
+        #     j += 1
+        while i <= mid:
+            ltmp.extend(li[i:mid+1])
+            i=mid+1
+        while j <= high:
+            ltmp.extend(li[j:high+1])
+            j=high+1
+        li[low:high+1] = ltmp
+    def merge_sort(self,li,low,high):
+        if low <high:#递归终止条件
+            mid= (low+high)//2
+            self.merge_sort(li,low,mid)#归并左边
+            self.merge_sort(li,mid+1,high)#归并右边
+            self.merge(li,low,mid,high)#将两边合并
+            print(li[low:high+1])
+        return li
 if __name__ == "__main__":
     li = [random.randint(0, 100) for i in range(10)]
     sort = sort_obj(li)
     print(li)
-    print(sort.heapsort())
-    print(sort.topk(3))
+    print(sort.merge_sort(li,0,len(li)-1))
 
 
