@@ -1,5 +1,6 @@
 # _*_coding:utf_8_*_
 # python代码仓库 was created by zy on 2021/12/12 19:48
+import heapq
 import random
 import time
 class sort_obj():
@@ -102,21 +103,74 @@ class sort_obj():
             self.quick_sort(li,left,mid-1)#递归左边的作为一个模块
             self.quick_sort(li,mid+1,right)#递归右边的作为一个模块
         return li
+    @staticmethod
+    def shift(li, low, high):
+        """
+        调整堆
+        low:堆根结点的位置
+        high：堆得最后一个元素的位置
+        """
+        # 用i 和 j 来记要交换的位置
+        # 如果父节点是i，那么子节点是i*2+1左孩子，右孩子是i*2+2
+        # 如果左孩子节点是j,那么父节点是(j-1)/2
+        i = low  # 根节点
+        j = 2 * i + 1  # 开始对比左孩子
+        tmp = li[i]  # 把堆顶元素存起来 ,那么堆顶对应i，i永远指向空位
+        while j <= high:  # 接下来用孩子与根节点对比大小，一直遍历到最后一个元素
+            if j + 1 <= high and li[j + 1] > li[j]:  # 如果右孩子比左孩子大，那么就将j指向右孩子，找到两个孩子里最大的那个,还要保证右孩子有
+                j = j + 1  # j指向右孩子
+            if li[j] > tmp:
+                li[i] = li[j]
+                i = j
+                j = 2 * i + 1  # 向下调整一层
+            else:  # tmp更大，就不用交换
+                break
+        li[i] = tmp  # 把原来的空位补上
+    @staticmethod
+    def buildMaxHeap(arr):#建堆
+        n = len(arr)
+        for i in range((n-2)//2,-1,-1):#i表示建堆的时候调整的部分的根的下标
+            sort_obj.shift(arr,i,n-1)
+        # print(arr)
+        #建堆完成，从最后一个非叶子结点调整，一直调整到根结点
     def heapsort(self,arr=None):#堆排序
+        #时间复杂度nlogn
         #将arr视为完全二叉数
+        #堆是特殊的完全二叉数
         #至下而上的搜索整个二叉树
-        #找到最大的数放在堆顶
-        #从堆顶取出最大数加入到新列表中
+        #找到最大的数放在堆顶，向下调整
+        #从堆顶取出最大数加入到新列表中，其实没有必要占一个额外的列表，找出最大的数放在堆底，只是占位置，最后的数最大
         #再重复以上步骤
-        #堆的定义左边的比右边的大，上边的比下边的大
+        #堆的定义，上边的比下边的大
+        #选最后一个数作为棋子补根节点
+        #构造堆，农村包围城市，选最后一个非叶子结点开始调整
         arr = self.li
-        global arrLen #定义一个全局变量，树的长度
+        global arrLen #定义一个全局变量，树的结点
         arrLen = len(arr)
-
+        sort_obj.buildMaxHeap(arr)#先建堆
+        # print(self.__dict__)
+        #节省内存，把堆顶元素和堆底元素进行交换，就是一个循环
+        for i in range(arrLen-1,-1,-1):#i一直指向堆的最后一个元素
+            arr[0],arr[i] = arr[i],arr[0]#让最后一个元素与第一个元素交换
+            sort_obj.shift(arr,0,i-1)#i-1是新的high
+        #i是0，堆已经空了，现在的堆已经是排好序的
+        return arr
+    def topk(self,k,li=None):
+        if not li:
+            li = self.li
+        #该函数取列表li前k个大的元素
+        heap = li[0:k]#取出前k个元素
+        heapq.heapify(heap)#前k个元素建立一个小根堆
+        for i in range(k,len(li)):
+            if li[i]>heap[0]:
+                heapq.heapreplace(heap,li[i])
+        heap.sort()
+        return heap
 if __name__ == "__main__":
     li = [random.randint(0, 100) for i in range(10)]
-    sort = sort_obj()
+    sort = sort_obj(li)
     print(li)
     print(sort.heapsort())
+    print(sort.topk(3))
 
 
