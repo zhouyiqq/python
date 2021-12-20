@@ -3,6 +3,7 @@
 import heapq
 import random
 import time
+import math
 class sort_obj():
     def __init__(self,li=None):
         self.li = li
@@ -74,9 +75,9 @@ class sort_obj():
                     min_loc = j
             li[i], li[min_loc] = li[min_loc], li[i]  # 将无序列表最小的那个数交换位置
         return li
-    def insert_sort_gap(self,gap):#把无序区里的数放在有序区里冒泡
+    def insert_sort_gap(self,li,gap):#把无序区里的数放在有序区里冒泡
         '''这是插入排序，gap是每组数的相隔数'''
-        li = self.li
+        #希尔排序
         for i in range(gap, len(li)):
             tmp = li[i]
             j = i - gap
@@ -84,6 +85,16 @@ class sort_obj():
                 li[j + gap] = li[j]
                 j -= gap
             li[j + gap] = tmp
+        return li
+    def shell_sort(self):
+        #把遍历的数值放到对应的组里
+        #时间复杂度度与gap序列有关
+        """希尔排序"""
+        li = self.li
+        d = len(li)//2#gap序列每次减半
+        while d >= 1:
+            self.insert_sort_gap(li,d)
+            d//=2
         return li
 #=======================================================================================================================
     def partition(self,li, left, right):
@@ -195,17 +206,79 @@ class sort_obj():
             j=high+1
         li[low:high+1] = ltmp
     def merge_sort(self,li,low,high):
+        """归并排序"""
         if low <high:#递归终止条件
             mid= (low+high)//2
             self.merge_sort(li,low,mid)#归并左边
             self.merge_sort(li,mid+1,high)#归并右边
             self.merge(li,low,mid,high)#将两边合并
-            print(li[low:high+1])
+            # print(li[low:high+1])
+        return li
+    #计数排序，知道大致怎么排序，然后统计无序列表
+    def count_sort(self,li=None,max_count=100):
+        """计数排序"""
+        li = self.li
+        count = [0 for _ in range(max_count+1)]
+        for val in li:
+            count[val]+=1#统计对应下标的个数
+        li.clear()
+        for ind,val in enumerate(count):
+            for i in range(val):
+                li.append(ind)
+        return li
+    def bucket_sort(self,n=100,max_num=10000):
+        #桶排序
+        """
+        桶排序的表现取决于数据地分布，对不同地数据采取不同地分策略
+        平均时间复杂度O（n+k）
+        最坏O（n2k）
+        空间复杂度o(nk)
+        """
+        li = self.li
+        buckets = [[] for _ in range(n)]#创建n个桶
+        for var in li:
+            i = min(var//(max_num//n),n-1)#表示var放在几号桶里,防止越界
+            buckets[i].append(var)
+            for j in range(len(buckets[i])-1,0,-1):
+                if buckets[i][j]<buckets[i][j-1]:#保持桶内的元素有序
+                    buckets[i][j],buckets[i][j-1]= buckets[i][j-1],buckets[i][j]
+        sorted_li = []
+        for buc in buckets:
+            sorted_li.extend(buc)
+        return sorted_li
+    def radix_sort(self):
+        """基数排序/多关键字排序"""
+        #时间复杂度O(kn)
+        #空间复杂度O(k+n)
+        #从最高位开始比较
+        li = self.li
+        max_num = max(li)#找到列表里面最大的值 9->1 99->2 10000->5
+        it = 0#代表最大数是几位数
+        # while 10**it <= max_num: #it 0->最高位位数
+        while it <= math.log(max_num,10):#从个位数开始查找，一直到最大数的最高位
+            buckets = [[] for _ in range(10)]#创建10个桶
+            for var in li:#遍历列表里面的元素
+                digit = (var//10**it)%10#取出与it相对应位置的数字
+                # print(digit)
+                buckets[digit].append(var)#分桶完成
+            li.clear()
+            for buc in buckets:
+                # print(buc)
+                li.extend(buc)
+            it+=1
+            # print(li)
+            # [62, 98, 60, 55, 44, 54, 99, 7, 15, 66]
+            # [60][][62][][44, 54][55, 15][66][7][98][99]
+            # [60, 62, 44, 54, 55, 15, 66, 7, 98, 99]
+            # [7][15][][][44][54, 55][60, 62, 66][][][98, 99]
+            # [7, 15, 44, 54, 55, 60, 62, 66, 98, 99]
         return li
 if __name__ == "__main__":
     li = [random.randint(0, 100) for i in range(10)]
     sort = sort_obj(li)
     print(li)
-    print(sort.merge_sort(li,0,len(li)-1))
+    # li = sort.bucket_sort(10,100)
+    li = sort.radix_sort()
+    print(li)
 
 
