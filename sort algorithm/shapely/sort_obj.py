@@ -7,7 +7,6 @@ import math
 class sort_obj():
     def __init__(self,li=None):
         self.li = li
-
     def run_time(func):
         def wraper(*args, **kwargs):
             t1 = time.time()
@@ -251,6 +250,7 @@ class sort_obj():
         #时间复杂度O(kn)
         #空间复杂度O(k+n)
         #从最高位开始比较
+        #效率与数的分布有关
         li = self.li
         max_num = max(li)#找到列表里面最大的值 9->1 99->2 10000->5
         it = 0#代表最大数是几位数
