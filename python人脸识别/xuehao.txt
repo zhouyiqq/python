@@ -1,4 +1,4 @@
-1	wangjun
+1	zhouyi
 2	zhouling
 3	lixinyi
 4	liyouyu
@@ -37,7 +37,6 @@
 37	yuqiang
 38	yaoyuhao
 39  zhouyi
-40 zhouyi
 41 sonhuancheng
 42 dawa
 43 lixianzhou

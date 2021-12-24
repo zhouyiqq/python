@@ -16,9 +16,9 @@ import test
 # path_list.sort() #对读取的路径进行排序
 b = []
 # 学号列表
-g = open('图片库/特征库/xuehao.txt', 'r')
+g = open('xuehao.txt', 'r')
 # 读取xuehao.txt
-with open('图片库/特征库/xuehao.txt', 'r') as fp:
+with open('xuehao.txt', 'r') as fp:
     lines = len(fp.readlines())
     fp.close()
 for i in range(lines):

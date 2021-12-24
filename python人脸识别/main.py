@@ -110,13 +110,13 @@ def add():  # 录取人脸特征
                         imgpath = 'photos/' + filename
                         image = cv2.imread(imgpath)
                         f = fr.face_encodings(image, known_face_locations=None)
-                        with open('图片库/特征库/xuehao.txt', 'r') as fp:
+                        with open('xuehao.txt', 'r') as fp:
                             lines = len(fp.readlines())
                             fp.close()
                         ft = open("图片库/特征库/" + str(lines + 1) + ".txt", "w")
                         ft.write(str(list(f[0])))
                         ft.close()
-                        fc = open("图片库/特征库/xuehao.txt", "a+")
+                        fc = open("xuehao.txt", "a+")
                         mz = input("请输入你的名字\n")
                         fc.write(str(lines + 1) + " " + mz + "\n")
                         fc.close()
