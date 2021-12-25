@@ -1,0 +1,591 @@
+Tue, 28 Apr 2020 13:20:14 WARNING From E:/QQ文件/毕业设计/行人检测/YOLOv3_TensorFlow/train.py:55: py_func (from tensorflow.python.ops.script_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+tf.py_func is deprecated in TF V2. Instead, use
+    tf.py_function, which takes a python function which manipulates tf eager
+    tensors instead of numpy arrays. It's easy to convert a tf eager tensor to
+    an ndarray (just call tensor.numpy()) but having access to eager tensors
+    means `tf.py_function`s can use accelerators such as GPUs as well as
+    being differentiable using a gradient tape.
+    
+Tue, 28 Apr 2020 13:20:14 WARNING From D:\Python\Anaconda\lib\site-packages\tensorflow\python\data\ops\iterator_ops.py:358: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Tue, 28 Apr 2020 13:20:30 WARNING From D:\Python\Anaconda\lib\site-packages\tensorflow\python\training\saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+Tue, 28 Apr 2020 13:20:30 INFO Restoring parameters from ./data/darknet_weights/yolov3.ckpt
+Tue, 28 Apr 2020 13:22:08 INFO 
+Epoch: 1, global_step: 100 | loss: total: 1404.87, xy: 2.74, wh: 17.07, conf: 1381.25, class: 3.80 | Last batch: rec: 0.455, prec: 0.011 | lr: 2.381e-05
+Tue, 28 Apr 2020 13:23:26 INFO 
+Epoch: 2, global_step: 200 | loss: total: 25.30, xy: 1.50, wh: 2.25, conf: 20.34, class: 1.21 | Last batch: rec: 0.875, prec: 0.031 | lr: 4.7619e-05
+Tue, 28 Apr 2020 13:24:43 INFO 
+Epoch: 3, global_step: 300 | loss: total: 6.37, xy: 0.82, wh: 0.91, conf: 4.37, class: 0.27 | Last batch: rec: 0.941, prec: 0.036 | lr: 7.1429e-05
+Tue, 28 Apr 2020 13:26:00 INFO 
+Epoch: 3, global_step: 400 | loss: total: 6.60, xy: 0.89, wh: 1.18, conf: 4.21, class: 0.32 | Last batch: rec: 1.000, prec: 0.040 | lr: 9.5238e-05
+Tue, 28 Apr 2020 13:27:18 INFO 
+Epoch: 4, global_step: 500 | loss: total: 8.34, xy: 0.95, wh: 2.66, conf: 4.12, class: 0.61 | Last batch: rec: 0.313, prec: 0.040 | lr: 0.0001
+Tue, 28 Apr 2020 13:28:16 INFO 
+======> Epoch: 4, global_step: 559.0, lr: 0.0001 <======
+EVAL: Class 0: Recall: 0.9656, Precision: 0.0238, AP: 0.8767
+EVAL: Recall: 0.9656, Precison: 0.0238, mAP: 0.8767
+EVAL: loss: total: 3.07, xy: 0.51, wh: 0.69, conf: 1.75, class: 0.12
+
+Tue, 28 Apr 2020 13:28:57 INFO 
+Epoch: 5, global_step: 600 | loss: total: 8.23, xy: 1.14, wh: 2.30, conf: 3.80, class: 0.98 | Last batch: rec: 0.974, prec: 0.042 | lr: 0.0001
+Tue, 28 Apr 2020 13:30:14 INFO 
+Epoch: 6, global_step: 700 | loss: total: 2.30, xy: 0.56, wh: 0.24, conf: 1.47, class: 0.03 | Last batch: rec: 1.000, prec: 0.024 | lr: 0.0001
+Tue, 28 Apr 2020 13:31:32 INFO 
+Epoch: 6, global_step: 800 | loss: total: 4.76, xy: 0.75, wh: 1.00, conf: 2.76, class: 0.25 | Last batch: rec: 1.000, prec: 0.024 | lr: 0.0001
+Tue, 28 Apr 2020 13:32:11 INFO 
+======> Epoch: 6, global_step: 839.0, lr: 0.0001 <======
+EVAL: Class 0: Recall: 0.9656, Precision: 0.0238, AP: 0.9238
+EVAL: Recall: 0.9656, Precison: 0.0238, mAP: 0.9238
+EVAL: loss: total: 2.33, xy: 0.44, wh: 0.55, conf: 1.28, class: 0.05
+
+Tue, 28 Apr 2020 13:33:05 INFO 
+Epoch: 7, global_step: 900 | loss: total: 2.75, xy: 0.47, wh: 0.41, conf: 1.82, class: 0.05 | Last batch: rec: 1.000, prec: 0.027 | lr: 0.0001
+Tue, 28 Apr 2020 13:34:22 INFO 
+Epoch: 8, global_step: 1000 | loss: total: 15.64, xy: 1.52, wh: 9.57, conf: 4.07, class: 0.47 | Last batch: rec: 0.960, prec: 0.027 | lr: 0.0001
+Tue, 28 Apr 2020 13:35:39 INFO 
+Epoch: 8, global_step: 1100 | loss: total: 4.91, xy: 0.67, wh: 1.97, conf: 2.14, class: 0.13 | Last batch: rec: 1.000, prec: 0.037 | lr: 0.0001
+Tue, 28 Apr 2020 13:36:03 INFO 
+======> Epoch: 8, global_step: 1119.0, lr: 0.0001 <======
+EVAL: Class 0: Recall: 0.9656, Precision: 0.0238, AP: 0.9177
+EVAL: Recall: 0.9656, Precison: 0.0238, mAP: 0.9177
+EVAL: loss: total: 1.98, xy: 0.40, wh: 0.45, conf: 1.10, class: 0.03
+
+Tue, 28 Apr 2020 13:37:06 INFO 
+Epoch: 9, global_step: 1200 | loss: total: 2.03, xy: 0.38, wh: 0.36, conf: 1.25, class: 0.03 | Last batch: rec: 1.000, prec: 0.038 | lr: 0.0001
+Tue, 28 Apr 2020 13:38:24 INFO 
+Epoch: 10, global_step: 1300 | loss: total: 3.80, xy: 0.84, wh: 0.74, conf: 1.98, class: 0.24 | Last batch: rec: 1.000, prec: 0.028 | lr: 0.0001
+Tue, 28 Apr 2020 13:39:50 INFO 
+======> Epoch: 10, global_step: 1399.0, lr: 0.0001 <======
+EVAL: Class 0: Recall: 0.9656, Precision: 0.0238, AP: 0.9175
+EVAL: Recall: 0.9656, Precison: 0.0238, mAP: 0.9175
+EVAL: loss: total: 1.96, xy: 0.37, wh: 0.43, conf: 1.14, class: 0.02
+
+Tue, 28 Apr 2020 13:39:51 INFO 
+Epoch: 11, global_step: 1400 | loss: total: 1.18, xy: 0.21, wh: 0.36, conf: 0.60, class: 0.01 | Last batch: rec: 1.000, prec: 0.023 | lr: 0.0001
+Tue, 28 Apr 2020 13:41:08 INFO 
+Epoch: 11, global_step: 1500 | loss: total: 3.08, xy: 0.53, wh: 0.83, conf: 1.64, class: 0.08 | Last batch: rec: 1.000, prec: 0.023 | lr: 0.0001
+Tue, 28 Apr 2020 13:42:26 INFO 
+Epoch: 12, global_step: 1600 | loss: total: 1.45, xy: 0.30, wh: 0.32, conf: 0.81, class: 0.02 | Last batch: rec: 1.000, prec: 0.029 | lr: 0.0001
+Tue, 28 Apr 2020 13:43:37 INFO 
+======> Epoch: 12, global_step: 1679.0, lr: 0.0001 <======
+EVAL: Class 0: Recall: 0.9733, Precision: 0.0239, AP: 0.9341
+EVAL: Recall: 0.9733, Precison: 0.0239, mAP: 0.9341
+EVAL: loss: total: 1.83, xy: 0.34, wh: 0.38, conf: 1.09, class: 0.02
+
+Tue, 28 Apr 2020 13:44:14 INFO 
+Epoch: 13, global_step: 1700 | loss: total: 1.63, xy: 0.29, wh: 0.32, conf: 1.00, class: 0.02 | Last batch: rec: 1.000, prec: 0.030 | lr: 0.0001
+Tue, 28 Apr 2020 13:45:31 INFO 
+Epoch: 13, global_step: 1800 | loss: total: 2.63, xy: 0.49, wh: 0.56, conf: 1.47, class: 0.12 | Last batch: rec: 1.000, prec: 0.022 | lr: 0.0001
+Tue, 28 Apr 2020 13:46:49 INFO 
+Epoch: 14, global_step: 1900 | loss: total: 1.39, xy: 0.30, wh: 0.30, conf: 0.76, class: 0.03 | Last batch: rec: 0.955, prec: 0.023 | lr: 0.0001
+Tue, 28 Apr 2020 13:47:44 INFO 
+======> Epoch: 14, global_step: 1959.0, lr: 0.0001 <======
+EVAL: Class 0: Recall: 0.9733, Precision: 0.0239, AP: 0.9178
+EVAL: Recall: 0.9733, Precison: 0.0239, mAP: 0.9178
+EVAL: loss: total: 2.04, xy: 0.34, wh: 0.38, conf: 1.31, class: 0.01
+
+Tue, 28 Apr 2020 13:48:16 INFO 
+Epoch: 15, global_step: 2000 | loss: total: 1.52, xy: 0.32, wh: 0.39, conf: 0.78, class: 0.02 | Last batch: rec: 1.000, prec: 0.027 | lr: 0.0001
+Tue, 28 Apr 2020 13:49:33 INFO 
+Epoch: 16, global_step: 2100 | loss: total: 2.52, xy: 0.81, wh: 0.30, conf: 1.39, class: 0.02 | Last batch: rec: 1.000, prec: 0.048 | lr: 0.0001
+Tue, 28 Apr 2020 13:50:50 INFO 
+Epoch: 16, global_step: 2200 | loss: total: 1.26, xy: 0.24, wh: 0.47, conf: 0.55, class: 0.01 | Last batch: rec: 1.000, prec: 0.022 | lr: 0.0001
+Tue, 28 Apr 2020 13:51:30 INFO 
+======> Epoch: 16, global_step: 2239.0, lr: 0.0001 <======
+EVAL: Class 0: Recall: 0.9618, Precision: 0.0237, AP: 0.8950
+EVAL: Recall: 0.9618, Precison: 0.0237, mAP: 0.8950
+EVAL: loss: total: 2.41, xy: 0.35, wh: 0.45, conf: 1.60, class: 0.01
+
+Tue, 28 Apr 2020 13:52:17 INFO 
+Epoch: 17, global_step: 2300 | loss: total: 1.40, xy: 0.27, wh: 0.46, conf: 0.65, class: 0.02 | Last batch: rec: 0.977, prec: 0.047 | lr: 0.0001
+Tue, 28 Apr 2020 13:53:35 INFO 
+Epoch: 18, global_step: 2400 | loss: total: 0.87, xy: 0.22, wh: 0.22, conf: 0.41, class: 0.01 | Last batch: rec: 1.000, prec: 0.036 | lr: 0.0001
+Tue, 28 Apr 2020 13:54:52 INFO 
+Epoch: 18, global_step: 2500 | loss: total: 2.01, xy: 0.39, wh: 0.67, conf: 0.89, class: 0.05 | Last batch: rec: 1.000, prec: 0.048 | lr: 0.0001
+Tue, 28 Apr 2020 13:55:16 INFO 
+======> Epoch: 18, global_step: 2519.0, lr: 0.0001 <======
+EVAL: Class 0: Recall: 0.9695, Precision: 0.0238, AP: 0.9244
+EVAL: Recall: 0.9695, Precison: 0.0238, mAP: 0.9244
+EVAL: loss: total: 1.88, xy: 0.33, wh: 0.31, conf: 1.23, class: 0.01
+
+Tue, 28 Apr 2020 13:56:19 INFO 
+Epoch: 19, global_step: 2600 | loss: total: 1.48, xy: 0.39, wh: 0.33, conf: 0.71, class: 0.05 | Last batch: rec: 1.000, prec: 0.022 | lr: 0.0001
+Tue, 28 Apr 2020 13:57:36 INFO 
+Epoch: 20, global_step: 2700 | loss: total: 2.35, xy: 0.57, wh: 0.57, conf: 1.17, class: 0.04 | Last batch: rec: 0.950, prec: 0.021 | lr: 0.0001
+Tue, 28 Apr 2020 13:59:09 INFO 
+======> Epoch: 20, global_step: 2799.0, lr: 0.0001 <======
+EVAL: Class 0: Recall: 0.9542, Precision: 0.0235, AP: 0.8907
+EVAL: Recall: 0.9542, Precison: 0.0235, mAP: 0.8907
+EVAL: loss: total: 2.49, xy: 0.35, wh: 0.61, conf: 1.52, class: 0.01
+
+Tue, 28 Apr 2020 13:59:10 INFO 
+Epoch: 21, global_step: 2800 | loss: total: 0.47, xy: 0.10, wh: 0.14, conf: 0.23, class: 0.00 | Last batch: rec: 1.000, prec: 0.022 | lr: 0.0001
+Tue, 28 Apr 2020 14:00:27 INFO 
+Epoch: 21, global_step: 2900 | loss: total: 0.94, xy: 0.19, wh: 0.24, conf: 0.49, class: 0.01 | Last batch: rec: 1.000, prec: 0.033 | lr: 0.0001
+Tue, 28 Apr 2020 14:01:45 INFO 
+Epoch: 22, global_step: 3000 | loss: total: 2.49, xy: 0.49, wh: 0.57, conf: 1.36, class: 0.07 | Last batch: rec: 1.000, prec: 0.024 | lr: 0.0001
+Tue, 28 Apr 2020 14:02:55 INFO 
+======> Epoch: 22, global_step: 3079.0, lr: 0.0001 <======
+EVAL: Class 0: Recall: 0.9809, Precision: 0.0241, AP: 0.9194
+EVAL: Recall: 0.9809, Precison: 0.0241, mAP: 0.9194
+EVAL: loss: total: 2.04, xy: 0.33, wh: 0.35, conf: 1.35, class: 0.01
+
+Tue, 28 Apr 2020 14:03:12 INFO 
+Epoch: 23, global_step: 3100 | loss: total: 0.70, xy: 0.17, wh: 0.20, conf: 0.31, class: 0.01 | Last batch: rec: 1.000, prec: 0.027 | lr: 0.0001
+Tue, 28 Apr 2020 14:04:29 INFO 
+Epoch: 23, global_step: 3200 | loss: total: 1.36, xy: 0.33, wh: 0.35, conf: 0.65, class: 0.02 | Last batch: rec: 1.000, prec: 0.017 | lr: 0.0001
+Tue, 28 Apr 2020 14:05:46 INFO 
+Epoch: 24, global_step: 3300 | loss: total: 0.49, xy: 0.13, wh: 0.16, conf: 0.19, class: 0.00 | Last batch: rec: 1.000, prec: 0.023 | lr: 0.0001
+Tue, 28 Apr 2020 14:06:41 INFO 
+======> Epoch: 24, global_step: 3359.0, lr: 0.0001 <======
+EVAL: Class 0: Recall: 0.9656, Precision: 0.0238, AP: 0.8609
+EVAL: Recall: 0.9656, Precison: 0.0238, mAP: 0.8609
+EVAL: loss: total: 2.66, xy: 0.33, wh: 0.56, conf: 1.77, class: 0.01
+
+Tue, 28 Apr 2020 14:07:13 INFO 
+Epoch: 25, global_step: 3400 | loss: total: 1.32, xy: 0.25, wh: 0.43, conf: 0.62, class: 0.02 | Last batch: rec: 1.000, prec: 0.014 | lr: 0.0001
+Tue, 28 Apr 2020 14:08:31 INFO 
+Epoch: 26, global_step: 3500 | loss: total: 0.31, xy: 0.07, wh: 0.10, conf: 0.14, class: 0.01 | Last batch: rec: 1.000, prec: 0.023 | lr: 0.0001
+Tue, 28 Apr 2020 14:09:48 INFO 
+Epoch: 26, global_step: 3600 | loss: total: 2.21, xy: 0.32, wh: 1.23, conf: 0.62, class: 0.04 | Last batch: rec: 1.000, prec: 0.029 | lr: 0.0001
+Tue, 28 Apr 2020 14:10:27 INFO 
+======> Epoch: 26, global_step: 3639.0, lr: 0.0001 <======
+EVAL: Class 0: Recall: 0.9733, Precision: 0.0239, AP: 0.9266
+EVAL: Recall: 0.9733, Precison: 0.0239, mAP: 0.9266
+EVAL: loss: total: 1.99, xy: 0.34, wh: 0.30, conf: 1.34, class: 0.01
+
+Tue, 28 Apr 2020 14:11:15 INFO 
+Epoch: 27, global_step: 3700 | loss: total: 0.47, xy: 0.12, wh: 0.17, conf: 0.17, class: 0.01 | Last batch: rec: 1.000, prec: 0.043 | lr: 0.0001
+Tue, 28 Apr 2020 14:12:32 INFO 
+Epoch: 28, global_step: 3800 | loss: total: 0.56, xy: 0.12, wh: 0.19, conf: 0.24, class: 0.00 | Last batch: rec: 1.000, prec: 0.023 | lr: 0.0001
+Tue, 28 Apr 2020 14:13:49 INFO 
+Epoch: 28, global_step: 3900 | loss: total: 0.64, xy: 0.14, wh: 0.21, conf: 0.28, class: 0.01 | Last batch: rec: 1.000, prec: 0.042 | lr: 0.0001
+Tue, 28 Apr 2020 14:14:13 INFO 
+======> Epoch: 28, global_step: 3919.0, lr: 0.0001 <======
+EVAL: Class 0: Recall: 0.9695, Precision: 0.0238, AP: 0.9250
+EVAL: Recall: 0.9695, Precison: 0.0238, mAP: 0.9250
+EVAL: loss: total: 1.99, xy: 0.34, wh: 0.34, conf: 1.29, class: 0.01
+
+Tue, 28 Apr 2020 14:15:16 INFO 
+Epoch: 29, global_step: 4000 | loss: total: 1.26, xy: 0.20, wh: 0.39, conf: 0.66, class: 0.01 | Last batch: rec: 1.000, prec: 0.043 | lr: 0.0001
+Tue, 28 Apr 2020 14:16:34 INFO 
+Epoch: 30, global_step: 4100 | loss: total: 1.23, xy: 0.22, wh: 0.60, conf: 0.39, class: 0.01 | Last batch: rec: 1.000, prec: 0.037 | lr: 0.0001
+Tue, 28 Apr 2020 14:18:07 INFO 
+======> Epoch: 30, global_step: 4199.0, lr: 0.0001 <======
+EVAL: Class 0: Recall: 0.9771, Precision: 0.0240, AP: 0.9383
+EVAL: Recall: 0.9771, Precison: 0.0240, mAP: 0.9383
+EVAL: loss: total: 2.06, xy: 0.34, wh: 0.35, conf: 1.36, class: 0.01
+
+Tue, 28 Apr 2020 14:18:15 INFO 
+Epoch: 31, global_step: 4200 | loss: total: 1.09, xy: 0.31, wh: 0.25, conf: 0.51, class: 0.02 | Last batch: rec: 1.000, prec: 0.044 | lr: 0.0001
+Tue, 28 Apr 2020 14:19:32 INFO 
+Epoch: 31, global_step: 4300 | loss: total: 1.18, xy: 0.28, wh: 0.46, conf: 0.42, class: 0.02 | Last batch: rec: 1.000, prec: 0.034 | lr: 0.0001
+Tue, 28 Apr 2020 14:20:50 INFO 
+Epoch: 32, global_step: 4400 | loss: total: 2.63, xy: 0.41, wh: 0.68, conf: 1.51, class: 0.03 | Last batch: rec: 1.000, prec: 0.027 | lr: 0.0001
+Tue, 28 Apr 2020 14:22:00 INFO 
+======> Epoch: 32, global_step: 4479.0, lr: 0.0001 <======
+EVAL: Class 0: Recall: 0.9733, Precision: 0.0239, AP: 0.9284
+EVAL: Recall: 0.9733, Precison: 0.0239, mAP: 0.9284
+EVAL: loss: total: 2.06, xy: 0.33, wh: 0.31, conf: 1.41, class: 0.01
+
+Tue, 28 Apr 2020 14:22:17 INFO 
+Epoch: 33, global_step: 4500 | loss: total: 0.50, xy: 0.09, wh: 0.14, conf: 0.26, class: 0.01 | Last batch: rec: 1.000, prec: 0.038 | lr: 0.0001
+Tue, 28 Apr 2020 14:23:34 INFO 
+Epoch: 33, global_step: 4600 | loss: total: 1.11, xy: 0.25, wh: 0.23, conf: 0.59, class: 0.04 | Last batch: rec: 1.000, prec: 0.023 | lr: 0.0001
+Tue, 28 Apr 2020 14:24:51 INFO 
+Epoch: 34, global_step: 4700 | loss: total: 0.40, xy: 0.12, wh: 0.12, conf: 0.15, class: 0.01 | Last batch: rec: 0.963, prec: 0.029 | lr: 3e-05
+Tue, 28 Apr 2020 14:25:46 INFO 
+======> Epoch: 34, global_step: 4759.0, lr: 3e-05 <======
+EVAL: Class 0: Recall: 0.9656, Precision: 0.0238, AP: 0.9225
+EVAL: Recall: 0.9656, Precison: 0.0238, mAP: 0.9225
+EVAL: loss: total: 2.08, xy: 0.33, wh: 0.25, conf: 1.49, class: 0.00
+
+Tue, 28 Apr 2020 14:26:18 INFO 
+Epoch: 35, global_step: 4800 | loss: total: 0.19, xy: 0.07, wh: 0.05, conf: 0.06, class: 0.00 | Last batch: rec: 1.000, prec: 0.031 | lr: 3e-05
+Tue, 28 Apr 2020 14:27:36 INFO 
+Epoch: 36, global_step: 4900 | loss: total: 0.03, xy: 0.01, wh: 0.01, conf: 0.01, class: 0.00 | Last batch: rec: 1.000, prec: 0.013 | lr: 3e-05
+Tue, 28 Apr 2020 14:28:53 INFO 
+Epoch: 36, global_step: 5000 | loss: total: 0.61, xy: 0.20, wh: 0.13, conf: 0.26, class: 0.01 | Last batch: rec: 1.000, prec: 0.022 | lr: 3e-05
+Tue, 28 Apr 2020 14:29:33 INFO 
+======> Epoch: 36, global_step: 5039.0, lr: 3e-05 <======
+EVAL: Class 0: Recall: 0.9580, Precision: 0.0236, AP: 0.9195
+EVAL: Recall: 0.9580, Precison: 0.0236, mAP: 0.9195
+EVAL: loss: total: 2.23, xy: 0.34, wh: 0.25, conf: 1.64, class: 0.00
+
+Tue, 28 Apr 2020 14:30:20 INFO 
+Epoch: 37, global_step: 5100 | loss: total: 0.88, xy: 0.28, wh: 0.18, conf: 0.41, class: 0.02 | Last batch: rec: 1.000, prec: 0.027 | lr: 3e-05
+Tue, 28 Apr 2020 14:31:38 INFO 
+Epoch: 38, global_step: 5200 | loss: total: 0.28, xy: 0.14, wh: 0.05, conf: 0.10, class: 0.00 | Last batch: rec: 1.000, prec: 0.037 | lr: 3e-05
+Tue, 28 Apr 2020 14:32:55 INFO 
+Epoch: 38, global_step: 5300 | loss: total: 0.21, xy: 0.09, wh: 0.04, conf: 0.08, class: 0.00 | Last batch: rec: 1.000, prec: 0.018 | lr: 3e-05
+Tue, 28 Apr 2020 14:33:19 INFO 
+======> Epoch: 38, global_step: 5319.0, lr: 3e-05 <======
+EVAL: Class 0: Recall: 0.9618, Precision: 0.0237, AP: 0.9210
+EVAL: Recall: 0.9618, Precison: 0.0237, mAP: 0.9210
+EVAL: loss: total: 2.32, xy: 0.33, wh: 0.27, conf: 1.72, class: 0.00
+
+Tue, 28 Apr 2020 14:34:22 INFO 
+Epoch: 39, global_step: 5400 | loss: total: 0.83, xy: 0.24, wh: 0.27, conf: 0.30, class: 0.02 | Last batch: rec: 1.000, prec: 0.047 | lr: 3e-05
+Tue, 28 Apr 2020 14:35:39 INFO 
+Epoch: 40, global_step: 5500 | loss: total: 1.15, xy: 0.33, wh: 0.32, conf: 0.48, class: 0.03 | Last batch: rec: 1.000, prec: 0.014 | lr: 3e-05
+Tue, 28 Apr 2020 14:37:13 INFO 
+======> Epoch: 40, global_step: 5599.0, lr: 3e-05 <======
+EVAL: Class 0: Recall: 0.9504, Precision: 0.0234, AP: 0.9159
+EVAL: Recall: 0.9504, Precison: 0.0234, mAP: 0.9159
+EVAL: loss: total: 2.34, xy: 0.34, wh: 0.27, conf: 1.73, class: 0.00
+
+Tue, 28 Apr 2020 14:37:15 INFO 
+Epoch: 41, global_step: 5600 | loss: total: 0.06, xy: 0.03, wh: 0.02, conf: 0.01, class: 0.00 | Last batch: rec: 1.000, prec: 0.030 | lr: 3e-05
+Tue, 28 Apr 2020 14:38:32 INFO 
+Epoch: 41, global_step: 5700 | loss: total: 0.55, xy: 0.18, wh: 0.12, conf: 0.23, class: 0.01 | Last batch: rec: 1.000, prec: 0.027 | lr: 3e-05
+Tue, 28 Apr 2020 14:39:49 INFO 
+Epoch: 42, global_step: 5800 | loss: total: 0.10, xy: 0.05, wh: 0.03, conf: 0.03, class: 0.00 | Last batch: rec: 1.000, prec: 0.030 | lr: 3e-05
+Tue, 28 Apr 2020 14:41:00 INFO 
+======> Epoch: 42, global_step: 5879.0, lr: 3e-05 <======
+EVAL: Class 0: Recall: 0.9580, Precision: 0.0236, AP: 0.9123
+EVAL: Recall: 0.9580, Precison: 0.0236, mAP: 0.9123
+EVAL: loss: total: 2.41, xy: 0.33, wh: 0.28, conf: 1.79, class: 0.00
+
+Tue, 28 Apr 2020 14:41:16 INFO 
+Epoch: 43, global_step: 5900 | loss: total: 0.23, xy: 0.12, wh: 0.05, conf: 0.06, class: 0.00 | Last batch: rec: 1.000, prec: 0.017 | lr: 3e-05
+Tue, 28 Apr 2020 14:42:33 INFO 
+Epoch: 43, global_step: 6000 | loss: total: 0.48, xy: 0.16, wh: 0.14, conf: 0.18, class: 0.01 | Last batch: rec: 0.964, prec: 0.118 | lr: 3e-05
+Tue, 28 Apr 2020 14:43:51 INFO 
+Epoch: 44, global_step: 6100 | loss: total: 0.61, xy: 0.18, wh: 0.17, conf: 0.25, class: 0.01 | Last batch: rec: 1.000, prec: 0.029 | lr: 3e-05
+Tue, 28 Apr 2020 14:44:46 INFO 
+======> Epoch: 44, global_step: 6159.0, lr: 3e-05 <======
+EVAL: Class 0: Recall: 0.9504, Precision: 0.0234, AP: 0.9189
+EVAL: Recall: 0.9504, Precison: 0.0234, mAP: 0.9189
+EVAL: loss: total: 2.41, xy: 0.33, wh: 0.30, conf: 1.78, class: 0.00
+
+Tue, 28 Apr 2020 14:45:18 INFO 
+Epoch: 45, global_step: 6200 | loss: total: 0.13, xy: 0.05, wh: 0.03, conf: 0.04, class: 0.00 | Last batch: rec: 1.000, prec: 0.028 | lr: 3e-05
+Tue, 28 Apr 2020 14:46:35 INFO 
+Epoch: 46, global_step: 6300 | loss: total: 0.08, xy: 0.03, wh: 0.04, conf: 0.01, class: 0.00 | Last batch: rec: 1.000, prec: 0.040 | lr: 3e-05
+Tue, 28 Apr 2020 14:47:52 INFO 
+Epoch: 46, global_step: 6400 | loss: total: 0.50, xy: 0.15, wh: 0.14, conf: 0.19, class: 0.01 | Last batch: rec: 1.000, prec: 0.021 | lr: 3e-05
+Tue, 28 Apr 2020 14:48:32 INFO 
+======> Epoch: 46, global_step: 6439.0, lr: 3e-05 <======
+EVAL: Class 0: Recall: 0.9542, Precision: 0.0235, AP: 0.9169
+EVAL: Recall: 0.9542, Precison: 0.0235, mAP: 0.9169
+EVAL: loss: total: 2.39, xy: 0.33, wh: 0.29, conf: 1.76, class: 0.00
+
+Tue, 28 Apr 2020 14:49:19 INFO 
+Epoch: 47, global_step: 6500 | loss: total: 0.11, xy: 0.05, wh: 0.03, conf: 0.04, class: 0.00 | Last batch: rec: 1.000, prec: 0.020 | lr: 3e-05
+Tue, 28 Apr 2020 14:50:37 INFO 
+Epoch: 48, global_step: 6600 | loss: total: 0.20, xy: 0.07, wh: 0.05, conf: 0.08, class: 0.00 | Last batch: rec: 1.000, prec: 0.037 | lr: 3e-05
+Tue, 28 Apr 2020 14:51:54 INFO 
+Epoch: 48, global_step: 6700 | loss: total: 0.47, xy: 0.14, wh: 0.18, conf: 0.15, class: 0.01 | Last batch: rec: 1.000, prec: 0.020 | lr: 3e-05
+Tue, 28 Apr 2020 14:52:18 INFO 
+======> Epoch: 48, global_step: 6719.0, lr: 3e-05 <======
+EVAL: Class 0: Recall: 0.9618, Precision: 0.0237, AP: 0.9255
+EVAL: Recall: 0.9618, Precison: 0.0237, mAP: 0.9255
+EVAL: loss: total: 2.43, xy: 0.34, wh: 0.29, conf: 1.80, class: 0.00
+
+Tue, 28 Apr 2020 14:53:21 INFO 
+Epoch: 49, global_step: 6800 | loss: total: 0.14, xy: 0.05, wh: 0.04, conf: 0.05, class: 0.00 | Last batch: rec: 0.974, prec: 0.042 | lr: 3e-05
+Tue, 28 Apr 2020 14:54:38 INFO 
+Epoch: 50, global_step: 6900 | loss: total: 0.19, xy: 0.07, wh: 0.06, conf: 0.06, class: 0.00 | Last batch: rec: 1.000, prec: 0.031 | lr: 3e-05
+Tue, 28 Apr 2020 14:56:11 INFO 
+======> Epoch: 50, global_step: 6999.0, lr: 3e-05 <======
+EVAL: Class 0: Recall: 0.9504, Precision: 0.0234, AP: 0.9200
+EVAL: Recall: 0.9504, Precison: 0.0234, mAP: 0.9200
+EVAL: loss: total: 2.47, xy: 0.33, wh: 0.29, conf: 1.84, class: 0.00
+
+Tue, 28 Apr 2020 14:56:12 INFO 
+Epoch: 51, global_step: 7000 | loss: total: 0.05, xy: 0.01, wh: 0.03, conf: 0.01, class: 0.00 | Last batch: rec: 1.000, prec: 0.026 | lr: 3e-05
+Tue, 28 Apr 2020 14:57:29 INFO 
+Epoch: 51, global_step: 7100 | loss: total: 0.59, xy: 0.15, wh: 0.09, conf: 0.33, class: 0.01 | Last batch: rec: 1.000, prec: 0.038 | lr: 3e-05
+Tue, 28 Apr 2020 14:58:47 INFO 
+Epoch: 52, global_step: 7200 | loss: total: 0.13, xy: 0.04, wh: 0.05, conf: 0.03, class: 0.00 | Last batch: rec: 1.000, prec: 0.028 | lr: 3e-05
+Tue, 28 Apr 2020 14:59:57 INFO 
+======> Epoch: 52, global_step: 7279.0, lr: 3e-05 <======
+EVAL: Class 0: Recall: 0.9618, Precision: 0.0237, AP: 0.9211
+EVAL: Recall: 0.9618, Precison: 0.0237, mAP: 0.9211
+EVAL: loss: total: 2.48, xy: 0.34, wh: 0.29, conf: 1.86, class: 0.00
+
+Tue, 28 Apr 2020 15:00:14 INFO 
+Epoch: 53, global_step: 7300 | loss: total: 2.09, xy: 0.45, wh: 0.80, conf: 0.80, class: 0.04 | Last batch: rec: 1.000, prec: 0.038 | lr: 3e-05
+Tue, 28 Apr 2020 15:01:31 INFO 
+Epoch: 53, global_step: 7400 | loss: total: 0.51, xy: 0.13, wh: 0.20, conf: 0.18, class: 0.01 | Last batch: rec: 1.000, prec: 0.033 | lr: 3e-05
+Tue, 28 Apr 2020 15:02:48 INFO 
+Epoch: 54, global_step: 7500 | loss: total: 0.11, xy: 0.04, wh: 0.04, conf: 0.04, class: 0.00 | Last batch: rec: 1.000, prec: 0.027 | lr: 1e-05
+Tue, 28 Apr 2020 15:03:43 INFO 
+======> Epoch: 54, global_step: 7559.0, lr: 1e-05 <======
+EVAL: Class 0: Recall: 0.9504, Precision: 0.0234, AP: 0.9122
+EVAL: Recall: 0.9504, Precison: 0.0234, mAP: 0.9122
+EVAL: loss: total: 2.44, xy: 0.34, wh: 0.29, conf: 1.82, class: 0.00
+
+Tue, 28 Apr 2020 15:04:15 INFO 
+Epoch: 55, global_step: 7600 | loss: total: 0.15, xy: 0.06, wh: 0.03, conf: 0.05, class: 0.00 | Last batch: rec: 0.982, prec: 0.121 | lr: 1e-05
+Tue, 28 Apr 2020 15:05:33 INFO 
+Epoch: 56, global_step: 7700 | loss: total: 0.01, xy: 0.00, wh: 0.00, conf: 0.01, class: 0.00 | Last batch: rec: 1.000, prec: 0.013 | lr: 1e-05
+Tue, 28 Apr 2020 15:06:50 INFO 
+Epoch: 56, global_step: 7800 | loss: total: 0.30, xy: 0.13, wh: 0.04, conf: 0.12, class: 0.01 | Last batch: rec: 1.000, prec: 0.028 | lr: 1e-05
+Tue, 28 Apr 2020 15:07:29 INFO 
+======> Epoch: 56, global_step: 7839.0, lr: 1e-05 <======
+EVAL: Class 0: Recall: 0.9466, Precision: 0.0234, AP: 0.9136
+EVAL: Recall: 0.9466, Precison: 0.0234, mAP: 0.9136
+EVAL: loss: total: 2.53, xy: 0.34, wh: 0.29, conf: 1.90, class: 0.00
+
+Tue, 28 Apr 2020 15:08:17 INFO 
+Epoch: 57, global_step: 7900 | loss: total: 0.09, xy: 0.04, wh: 0.02, conf: 0.03, class: 0.00 | Last batch: rec: 1.000, prec: 0.029 | lr: 1e-05
+Tue, 28 Apr 2020 15:09:34 INFO 
+Epoch: 58, global_step: 8000 | loss: total: 0.11, xy: 0.06, wh: 0.02, conf: 0.03, class: 0.00 | Last batch: rec: 1.000, prec: 0.021 | lr: 1e-05
+Tue, 28 Apr 2020 15:10:52 INFO 
+Epoch: 58, global_step: 8100 | loss: total: 0.24, xy: 0.10, wh: 0.03, conf: 0.10, class: 0.01 | Last batch: rec: 0.977, prec: 0.048 | lr: 1e-05
+Tue, 28 Apr 2020 15:11:16 INFO 
+======> Epoch: 58, global_step: 8119.0, lr: 1e-05 <======
+EVAL: Class 0: Recall: 0.9504, Precision: 0.0236, AP: 0.9178
+EVAL: Recall: 0.9504, Precison: 0.0236, mAP: 0.9178
+EVAL: loss: total: 2.55, xy: 0.34, wh: 0.30, conf: 1.92, class: 0.00
+
+Tue, 28 Apr 2020 15:12:19 INFO 
+Epoch: 59, global_step: 8200 | loss: total: 0.08, xy: 0.04, wh: 0.02, conf: 0.02, class: 0.00 | Last batch: rec: 1.000, prec: 0.050 | lr: 1e-05
+Tue, 28 Apr 2020 15:13:36 INFO 
+Epoch: 60, global_step: 8300 | loss: total: 0.09, xy: 0.04, wh: 0.02, conf: 0.03, class: 0.00 | Last batch: rec: 0.973, prec: 0.040 | lr: 1e-05
+Tue, 28 Apr 2020 15:15:08 INFO 
+======> Epoch: 60, global_step: 8399.0, lr: 1e-05 <======
+EVAL: Class 0: Recall: 0.9504, Precision: 0.0239, AP: 0.9135
+EVAL: Recall: 0.9504, Precison: 0.0239, mAP: 0.9135
+EVAL: loss: total: 2.60, xy: 0.34, wh: 0.31, conf: 1.95, class: 0.00
+
+Tue, 28 Apr 2020 15:15:10 INFO 
+Epoch: 61, global_step: 8400 | loss: total: 0.03, xy: 0.01, wh: 0.01, conf: 0.01, class: 0.00 | Last batch: rec: 1.000, prec: 0.026 | lr: 1e-05
+Tue, 28 Apr 2020 15:16:27 INFO 
+Epoch: 61, global_step: 8500 | loss: total: 0.26, xy: 0.11, wh: 0.04, conf: 0.10, class: 0.01 | Last batch: rec: 1.000, prec: 0.020 | lr: 1e-05
+Tue, 28 Apr 2020 15:17:44 INFO 
+Epoch: 62, global_step: 8600 | loss: total: 0.06, xy: 0.03, wh: 0.02, conf: 0.02, class: 0.00 | Last batch: rec: 1.000, prec: 0.014 | lr: 1e-05
+Tue, 28 Apr 2020 15:18:55 INFO 
+======> Epoch: 62, global_step: 8679.0, lr: 1e-05 <======
+EVAL: Class 0: Recall: 0.9504, Precision: 0.0244, AP: 0.9162
+EVAL: Recall: 0.9504, Precison: 0.0244, mAP: 0.9162
+EVAL: loss: total: 2.58, xy: 0.34, wh: 0.31, conf: 1.94, class: 0.00
+
+Tue, 28 Apr 2020 15:19:11 INFO 
+Epoch: 63, global_step: 8700 | loss: total: 0.05, xy: 0.02, wh: 0.01, conf: 0.01, class: 0.00 | Last batch: rec: 1.000, prec: 0.038 | lr: 1e-05
+Tue, 28 Apr 2020 15:20:28 INFO 
+Epoch: 63, global_step: 8800 | loss: total: 0.23, xy: 0.09, wh: 0.05, conf: 0.08, class: 0.00 | Last batch: rec: 1.000, prec: 0.037 | lr: 1e-05
+Tue, 28 Apr 2020 15:21:46 INFO 
+Epoch: 64, global_step: 8900 | loss: total: 0.28, xy: 0.12, wh: 0.06, conf: 0.10, class: 0.01 | Last batch: rec: 1.000, prec: 0.039 | lr: 1e-05
+Tue, 28 Apr 2020 15:22:41 INFO 
+======> Epoch: 64, global_step: 8959.0, lr: 1e-05 <======
+EVAL: Class 0: Recall: 0.9504, Precision: 0.0242, AP: 0.9127
+EVAL: Recall: 0.9504, Precison: 0.0242, mAP: 0.9127
+EVAL: loss: total: 2.64, xy: 0.34, wh: 0.31, conf: 1.99, class: 0.00
+
+Tue, 28 Apr 2020 15:23:13 INFO 
+Epoch: 65, global_step: 9000 | loss: total: 0.12, xy: 0.05, wh: 0.03, conf: 0.04, class: 0.00 | Last batch: rec: 1.000, prec: 0.038 | lr: 1e-05
+Tue, 28 Apr 2020 15:24:31 INFO 
+Epoch: 66, global_step: 9100 | loss: total: 0.08, xy: 0.03, wh: 0.02, conf: 0.02, class: 0.00 | Last batch: rec: 1.000, prec: 0.041 | lr: 1e-05
+Tue, 28 Apr 2020 15:25:48 INFO 
+Epoch: 66, global_step: 9200 | loss: total: 0.06, xy: 0.03, wh: 0.02, conf: 0.02, class: 0.00 | Last batch: rec: 1.000, prec: 0.022 | lr: 1e-05
+Tue, 28 Apr 2020 15:26:27 INFO 
+======> Epoch: 66, global_step: 9239.0, lr: 1e-05 <======
+EVAL: Class 0: Recall: 0.9542, Precision: 0.0252, AP: 0.9206
+EVAL: Recall: 0.9542, Precison: 0.0252, mAP: 0.9206
+EVAL: loss: total: 2.72, xy: 0.34, wh: 0.32, conf: 2.06, class: 0.00
+
+Tue, 28 Apr 2020 15:27:15 INFO 
+Epoch: 67, global_step: 9300 | loss: total: 0.31, xy: 0.13, wh: 0.06, conf: 0.11, class: 0.01 | Last batch: rec: 1.000, prec: 0.042 | lr: 1e-05
+Tue, 28 Apr 2020 15:28:32 INFO 
+Epoch: 68, global_step: 9400 | loss: total: 0.09, xy: 0.04, wh: 0.02, conf: 0.03, class: 0.00 | Last batch: rec: 1.000, prec: 0.030 | lr: 1e-05
+Tue, 28 Apr 2020 15:29:49 INFO 
+Epoch: 68, global_step: 9500 | loss: total: 0.20, xy: 0.08, wh: 0.04, conf: 0.07, class: 0.00 | Last batch: rec: 1.000, prec: 0.017 | lr: 1e-05
+Tue, 28 Apr 2020 15:30:13 INFO 
+======> Epoch: 68, global_step: 9519.0, lr: 1e-05 <======
+EVAL: Class 0: Recall: 0.9542, Precision: 0.0254, AP: 0.9211
+EVAL: Recall: 0.9542, Precison: 0.0254, mAP: 0.9211
+EVAL: loss: total: 2.72, xy: 0.34, wh: 0.32, conf: 2.06, class: 0.00
+
+Tue, 28 Apr 2020 15:31:16 INFO 
+Epoch: 69, global_step: 9600 | loss: total: 0.05, xy: 0.02, wh: 0.02, conf: 0.01, class: 0.00 | Last batch: rec: 1.000, prec: 0.016 | lr: 1e-05
+Tue, 28 Apr 2020 15:32:34 INFO 
+Epoch: 70, global_step: 9700 | loss: total: 0.40, xy: 0.17, wh: 0.07, conf: 0.15, class: 0.01 | Last batch: rec: 0.957, prec: 0.052 | lr: 1e-05
+Tue, 28 Apr 2020 15:33:55 WARNING From D:\Python\Anaconda\lib\site-packages\tensorflow\python\training\saver.py:966: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+Tue, 28 Apr 2020 15:34:06 INFO 
+======> Epoch: 70, global_step: 9799.0, lr: 1e-05 <======
+EVAL: Class 0: Recall: 0.9542, Precision: 0.0258, AP: 0.9200
+EVAL: Recall: 0.9542, Precison: 0.0258, mAP: 0.9200
+EVAL: loss: total: 2.74, xy: 0.34, wh: 0.32, conf: 2.08, class: 0.00
+
+Tue, 28 Apr 2020 15:34:08 INFO 
+Epoch: 71, global_step: 9800 | loss: total: 0.22, xy: 0.08, wh: 0.08, conf: 0.06, class: 0.00 | Last batch: rec: 0.986, prec: 0.082 | lr: 1e-05
+Tue, 28 Apr 2020 15:35:25 INFO 
+Epoch: 71, global_step: 9900 | loss: total: 0.20, xy: 0.09, wh: 0.04, conf: 0.07, class: 0.00 | Last batch: rec: 1.000, prec: 0.018 | lr: 1e-05
+Tue, 28 Apr 2020 15:36:42 INFO 
+Epoch: 72, global_step: 10000 | loss: total: 0.06, xy: 0.03, wh: 0.02, conf: 0.02, class: 0.00 | Last batch: rec: 1.000, prec: 0.025 | lr: 1e-05
+Tue, 28 Apr 2020 15:37:52 INFO 
+======> Epoch: 72, global_step: 10079.0, lr: 1e-05 <======
+EVAL: Class 0: Recall: 0.9504, Precision: 0.0252, AP: 0.9171
+EVAL: Recall: 0.9504, Precison: 0.0252, mAP: 0.9171
+EVAL: loss: total: 2.73, xy: 0.34, wh: 0.33, conf: 2.06, class: 0.00
+
+Tue, 28 Apr 2020 15:38:09 INFO 
+Epoch: 73, global_step: 10100 | loss: total: 0.07, xy: 0.03, wh: 0.02, conf: 0.01, class: 0.00 | Last batch: rec: 0.966, prec: 0.072 | lr: 1e-05
+Tue, 28 Apr 2020 15:39:26 INFO 
+Epoch: 73, global_step: 10200 | loss: total: 0.17, xy: 0.07, wh: 0.04, conf: 0.05, class: 0.00 | Last batch: rec: 1.000, prec: 0.027 | lr: 1e-05
+Tue, 28 Apr 2020 15:40:44 INFO 
+Epoch: 74, global_step: 10300 | loss: total: 0.23, xy: 0.09, wh: 0.05, conf: 0.08, class: 0.00 | Last batch: rec: 1.000, prec: 0.017 | lr: 1e-05
+Tue, 28 Apr 2020 15:41:38 INFO 
+======> Epoch: 74, global_step: 10359.0, lr: 1e-05 <======
+EVAL: Class 0: Recall: 0.9542, Precision: 0.0263, AP: 0.9242
+EVAL: Recall: 0.9542, Precison: 0.0263, mAP: 0.9242
+EVAL: loss: total: 2.72, xy: 0.34, wh: 0.32, conf: 2.05, class: 0.00
+
+Tue, 28 Apr 2020 15:42:10 INFO 
+Epoch: 75, global_step: 10400 | loss: total: 0.07, xy: 0.03, wh: 0.02, conf: 0.02, class: 0.00 | Last batch: rec: 1.000, prec: 0.026 | lr: 1e-05
+Tue, 28 Apr 2020 15:43:28 INFO 
+Epoch: 76, global_step: 10500 | loss: total: 0.05, xy: 0.02, wh: 0.02, conf: 0.00, class: 0.00 | Last batch: rec: 1.000, prec: 0.029 | lr: 1e-05
+Tue, 28 Apr 2020 15:44:45 INFO 
+Epoch: 76, global_step: 10600 | loss: total: 0.06, xy: 0.02, wh: 0.02, conf: 0.01, class: 0.00 | Last batch: rec: 1.000, prec: 0.066 | lr: 1e-05
+Tue, 28 Apr 2020 15:45:24 INFO 
+======> Epoch: 76, global_step: 10639.0, lr: 1e-05 <======
+EVAL: Class 0: Recall: 0.9542, Precision: 0.0273, AP: 0.9217
+EVAL: Recall: 0.9542, Precison: 0.0273, mAP: 0.9217
+EVAL: loss: total: 2.73, xy: 0.34, wh: 0.32, conf: 2.07, class: 0.00
+
+Tue, 28 Apr 2020 15:46:12 INFO 
+Epoch: 77, global_step: 10700 | loss: total: 0.07, xy: 0.03, wh: 0.02, conf: 0.02, class: 0.00 | Last batch: rec: 1.000, prec: 0.021 | lr: 1e-05
+Tue, 28 Apr 2020 15:47:30 INFO 
+Epoch: 78, global_step: 10800 | loss: total: 0.04, xy: 0.02, wh: 0.01, conf: 0.01, class: 0.00 | Last batch: rec: 1.000, prec: 0.052 | lr: 1e-05
+Tue, 28 Apr 2020 15:48:47 INFO 
+Epoch: 78, global_step: 10900 | loss: total: 0.06, xy: 0.02, wh: 0.02, conf: 0.01, class: 0.00 | Last batch: rec: 1.000, prec: 0.029 | lr: 1e-05
+Tue, 28 Apr 2020 15:49:11 INFO 
+======> Epoch: 78, global_step: 10919.0, lr: 1e-05 <======
+EVAL: Class 0: Recall: 0.9504, Precision: 0.0273, AP: 0.9155
+EVAL: Recall: 0.9504, Precison: 0.0273, mAP: 0.9155
+EVAL: loss: total: 2.81, xy: 0.34, wh: 0.33, conf: 2.14, class: 0.00
+
+Tue, 28 Apr 2020 15:50:14 INFO 
+Epoch: 79, global_step: 11000 | loss: total: 0.07, xy: 0.03, wh: 0.03, conf: 0.02, class: 0.00 | Last batch: rec: 1.000, prec: 0.073 | lr: 1e-05
+Tue, 28 Apr 2020 15:51:31 INFO 
+Epoch: 80, global_step: 11100 | loss: total: 0.05, xy: 0.02, wh: 0.02, conf: 0.01, class: 0.00 | Last batch: rec: 1.000, prec: 0.039 | lr: 1e-05
+Tue, 28 Apr 2020 15:53:04 INFO 
+======> Epoch: 80, global_step: 11199.0, lr: 1e-05 <======
+EVAL: Class 0: Recall: 0.9542, Precision: 0.0266, AP: 0.9213
+EVAL: Recall: 0.9542, Precison: 0.0266, mAP: 0.9213
+EVAL: loss: total: 2.75, xy: 0.34, wh: 0.33, conf: 2.09, class: 0.00
+
+Tue, 28 Apr 2020 15:53:05 INFO 
+Epoch: 81, global_step: 11200 | loss: total: 0.07, xy: 0.03, wh: 0.03, conf: 0.01, class: 0.00 | Last batch: rec: 1.000, prec: 0.035 | lr: 1e-05
+Tue, 28 Apr 2020 15:54:22 INFO 
+Epoch: 81, global_step: 11300 | loss: total: 0.16, xy: 0.06, wh: 0.05, conf: 0.04, class: 0.00 | Last batch: rec: 1.000, prec: 0.030 | lr: 1e-05
+Tue, 28 Apr 2020 15:55:40 INFO 
+Epoch: 82, global_step: 11400 | loss: total: 0.07, xy: 0.02, wh: 0.02, conf: 0.02, class: 0.00 | Last batch: rec: 1.000, prec: 0.038 | lr: 1e-05
+Tue, 28 Apr 2020 15:56:50 INFO 
+======> Epoch: 82, global_step: 11479.0, lr: 1e-05 <======
+EVAL: Class 0: Recall: 0.9427, Precision: 0.0314, AP: 0.9174
+EVAL: Recall: 0.9427, Precison: 0.0314, mAP: 0.9174
+EVAL: loss: total: 2.85, xy: 0.34, wh: 0.35, conf: 2.17, class: 0.00
+
+Tue, 28 Apr 2020 15:57:06 INFO 
+Epoch: 83, global_step: 11500 | loss: total: 0.03, xy: 0.01, wh: 0.01, conf: 0.01, class: 0.00 | Last batch: rec: 1.000, prec: 0.037 | lr: 1e-05
+Tue, 28 Apr 2020 15:58:24 INFO 
+Epoch: 83, global_step: 11600 | loss: total: 0.15, xy: 0.06, wh: 0.05, conf: 0.04, class: 0.00 | Last batch: rec: 1.000, prec: 0.040 | lr: 1e-05
+Tue, 28 Apr 2020 15:59:41 INFO 
+Epoch: 84, global_step: 11700 | loss: total: 0.06, xy: 0.02, wh: 0.02, conf: 0.01, class: 0.00 | Last batch: rec: 1.000, prec: 0.035 | lr: 1e-05
+Tue, 28 Apr 2020 16:00:36 INFO 
+======> Epoch: 84, global_step: 11759.0, lr: 1e-05 <======
+EVAL: Class 0: Recall: 0.9542, Precision: 0.0282, AP: 0.9211
+EVAL: Recall: 0.9542, Precison: 0.0282, mAP: 0.9211
+EVAL: loss: total: 2.78, xy: 0.34, wh: 0.33, conf: 2.11, class: 0.00
+
+Tue, 28 Apr 2020 16:01:08 INFO 
+Epoch: 85, global_step: 11800 | loss: total: 0.27, xy: 0.11, wh: 0.08, conf: 0.07, class: 0.01 | Last batch: rec: 1.000, prec: 0.047 | lr: 1e-05
+Tue, 28 Apr 2020 16:02:26 INFO 
+Epoch: 86, global_step: 11900 | loss: total: 0.17, xy: 0.07, wh: 0.04, conf: 0.05, class: 0.00 | Last batch: rec: 1.000, prec: 0.077 | lr: 1e-05
+Tue, 28 Apr 2020 16:03:43 INFO 
+Epoch: 86, global_step: 12000 | loss: total: 0.13, xy: 0.06, wh: 0.04, conf: 0.03, class: 0.00 | Last batch: rec: 1.000, prec: 0.032 | lr: 1e-05
+Tue, 28 Apr 2020 16:04:22 INFO 
+======> Epoch: 86, global_step: 12039.0, lr: 1e-05 <======
+EVAL: Class 0: Recall: 0.9427, Precision: 0.0349, AP: 0.9182
+EVAL: Recall: 0.9427, Precison: 0.0349, mAP: 0.9182
+EVAL: loss: total: 2.83, xy: 0.34, wh: 0.34, conf: 2.15, class: 0.00
+
+Tue, 28 Apr 2020 16:05:09 INFO 
+Epoch: 87, global_step: 12100 | loss: total: 0.05, xy: 0.02, wh: 0.02, conf: 0.01, class: 0.00 | Last batch: rec: 1.000, prec: 0.038 | lr: 1e-05
+Tue, 28 Apr 2020 16:06:27 INFO 
+Epoch: 88, global_step: 12200 | loss: total: 0.04, xy: 0.01, wh: 0.02, conf: 0.01, class: 0.00 | Last batch: rec: 1.000, prec: 0.028 | lr: 1e-05
+Tue, 28 Apr 2020 16:07:44 INFO 
+Epoch: 88, global_step: 12300 | loss: total: 0.13, xy: 0.05, wh: 0.04, conf: 0.04, class: 0.00 | Last batch: rec: 1.000, prec: 0.206 | lr: 1e-05
+Tue, 28 Apr 2020 16:08:09 INFO 
+======> Epoch: 88, global_step: 12319.0, lr: 1e-05 <======
+EVAL: Class 0: Recall: 0.9427, Precision: 0.0326, AP: 0.9178
+EVAL: Recall: 0.9427, Precison: 0.0326, mAP: 0.9178
+EVAL: loss: total: 2.90, xy: 0.34, wh: 0.34, conf: 2.23, class: 0.00
+
+Tue, 28 Apr 2020 16:09:12 INFO 
+Epoch: 89, global_step: 12400 | loss: total: 0.14, xy: 0.06, wh: 0.05, conf: 0.03, class: 0.00 | Last batch: rec: 1.000, prec: 0.087 | lr: 1e-05
+Tue, 28 Apr 2020 16:10:29 INFO 
+Epoch: 90, global_step: 12500 | loss: total: 0.04, xy: 0.02, wh: 0.02, conf: 0.01, class: 0.00 | Last batch: rec: 1.000, prec: 0.023 | lr: 1e-05
+Tue, 28 Apr 2020 16:12:01 INFO 
+======> Epoch: 90, global_step: 12599.0, lr: 1e-05 <======
+EVAL: Class 0: Recall: 0.9427, Precision: 0.0337, AP: 0.9217
+EVAL: Recall: 0.9427, Precison: 0.0337, mAP: 0.9217
+EVAL: loss: total: 2.87, xy: 0.34, wh: 0.35, conf: 2.18, class: 0.00
+
+Tue, 28 Apr 2020 16:12:03 INFO 
+Epoch: 91, global_step: 12600 | loss: total: 0.07, xy: 0.04, wh: 0.03, conf: 0.01, class: 0.00 | Last batch: rec: 0.976, prec: 0.046 | lr: 1e-05
+Tue, 28 Apr 2020 16:13:20 INFO 
+Epoch: 91, global_step: 12700 | loss: total: 0.05, xy: 0.02, wh: 0.02, conf: 0.01, class: 0.00 | Last batch: rec: 1.000, prec: 0.019 | lr: 1e-05
+Tue, 28 Apr 2020 16:14:37 INFO 
+Epoch: 92, global_step: 12800 | loss: total: 0.07, xy: 0.02, wh: 0.04, conf: 0.01, class: 0.00 | Last batch: rec: 0.992, prec: 0.279 | lr: 1e-05
+Tue, 28 Apr 2020 16:15:47 INFO 
+======> Epoch: 92, global_step: 12879.0, lr: 1e-05 <======
+EVAL: Class 0: Recall: 0.9389, Precision: 0.0409, AP: 0.9187
+EVAL: Recall: 0.9389, Precison: 0.0409, mAP: 0.9187
+EVAL: loss: total: 2.88, xy: 0.34, wh: 0.35, conf: 2.19, class: 0.00
+
+Tue, 28 Apr 2020 16:16:04 INFO 
+Epoch: 93, global_step: 12900 | loss: total: 0.07, xy: 0.03, wh: 0.03, conf: 0.01, class: 0.00 | Last batch: rec: 1.000, prec: 0.041 | lr: 1e-05
+Tue, 28 Apr 2020 16:17:21 INFO 
+Epoch: 93, global_step: 13000 | loss: total: 0.13, xy: 0.05, wh: 0.05, conf: 0.03, class: 0.00 | Last batch: rec: 1.000, prec: 0.024 | lr: 1e-05
+Tue, 28 Apr 2020 16:18:39 INFO 
+Epoch: 94, global_step: 13100 | loss: total: 0.05, xy: 0.02, wh: 0.02, conf: 0.01, class: 0.00 | Last batch: rec: 1.000, prec: 0.038 | lr: 1e-05
+Tue, 28 Apr 2020 16:19:33 INFO 
+======> Epoch: 94, global_step: 13159.0, lr: 1e-05 <======
+EVAL: Class 0: Recall: 0.9389, Precision: 0.0418, AP: 0.9159
+EVAL: Recall: 0.9389, Precison: 0.0418, mAP: 0.9159
+EVAL: loss: total: 2.89, xy: 0.34, wh: 0.34, conf: 2.20, class: 0.00
+
+Tue, 28 Apr 2020 16:20:05 INFO 
+Epoch: 95, global_step: 13200 | loss: total: 0.05, xy: 0.02, wh: 0.02, conf: 0.01, class: 0.00 | Last batch: rec: 1.000, prec: 0.059 | lr: 1e-05
+Tue, 28 Apr 2020 16:21:23 INFO 
+Epoch: 96, global_step: 13300 | loss: total: 0.02, xy: 0.01, wh: 0.01, conf: 0.00, class: 0.00 | Last batch: rec: 0.950, prec: 0.037 | lr: 1e-05
+Tue, 28 Apr 2020 16:22:40 INFO 
+Epoch: 96, global_step: 13400 | loss: total: 0.04, xy: 0.02, wh: 0.02, conf: 0.01, class: 0.00 | Last batch: rec: 1.000, prec: 0.098 | lr: 1e-05
+Tue, 28 Apr 2020 16:23:19 INFO 
+======> Epoch: 96, global_step: 13439.0, lr: 1e-05 <======
+EVAL: Class 0: Recall: 0.9389, Precision: 0.0462, AP: 0.9142
+EVAL: Recall: 0.9389, Precison: 0.0462, mAP: 0.9142
+EVAL: loss: total: 2.85, xy: 0.34, wh: 0.35, conf: 2.16, class: 0.00
+
+Tue, 28 Apr 2020 16:24:07 INFO 
+Epoch: 97, global_step: 13500 | loss: total: 0.17, xy: 0.06, wh: 0.07, conf: 0.04, class: 0.00 | Last batch: rec: 1.000, prec: 0.028 | lr: 1e-05
+Tue, 28 Apr 2020 16:25:24 INFO 
+Epoch: 98, global_step: 13600 | loss: total: 0.07, xy: 0.02, wh: 0.04, conf: 0.01, class: 0.00 | Last batch: rec: 1.000, prec: 0.041 | lr: 1e-05
+Tue, 28 Apr 2020 16:26:41 INFO 
+Epoch: 98, global_step: 13700 | loss: total: 0.11, xy: 0.04, wh: 0.04, conf: 0.02, class: 0.00 | Last batch: rec: 1.000, prec: 0.036 | lr: 1e-05
+Tue, 28 Apr 2020 16:27:05 INFO 
+======> Epoch: 98, global_step: 13719.0, lr: 1e-05 <======
+EVAL: Class 0: Recall: 0.9389, Precision: 0.0488, AP: 0.9136
+EVAL: Recall: 0.9389, Precison: 0.0488, mAP: 0.9136
+EVAL: loss: total: 2.95, xy: 0.34, wh: 0.35, conf: 2.26, class: 0.00
+
+Tue, 28 Apr 2020 16:28:08 INFO 
+Epoch: 99, global_step: 13800 | loss: total: 0.14, xy: 0.05, wh: 0.05, conf: 0.04, class: 0.00 | Last batch: rec: 1.000, prec: 0.058 | lr: 1e-05
+Tue, 28 Apr 2020 16:29:27 INFO 
+Epoch: 100, global_step: 13900 | loss: total: 0.21, xy: 0.09, wh: 0.07, conf: 0.05, class: 0.01 | Last batch: rec: 1.000, prec: 0.021 | lr: 1e-05
+Tue, 28 Apr 2020 16:31:00 INFO 
+======> Epoch: 100, global_step: 13999.0, lr: 1e-05 <======
+EVAL: Class 0: Recall: 0.9389, Precision: 0.0472, AP: 0.9126
+EVAL: Recall: 0.9389, Precison: 0.0472, mAP: 0.9126
+EVAL: loss: total: 2.92, xy: 0.34, wh: 0.36, conf: 2.22, class: 0.00
+
