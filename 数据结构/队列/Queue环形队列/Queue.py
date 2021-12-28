@@ -24,7 +24,7 @@ class Queue:
     def is_filled(self):
         return (self.rear+1)%self.size == self.front
 def tail(n):
-    with open("test.txt","r") as F:
+    with open("test.txt", "r") as F:
         q = deque(F,n)
         return q
 if __name__ == "__main__":
