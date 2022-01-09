@@ -59,3 +59,4 @@ def maze_path(x1,y1,x2,y2):#x1,y1表示起点，x2，y2表示终点
         print("死路")
         return False
 maze_path(1,1,8,8)
+#广度优先搜索，使用队列储存目前正在考虑的点

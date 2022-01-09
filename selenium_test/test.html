@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- HTML5声明，一定要第一行 -->
+<html lang="en">
+ <!-- 相当于一个人 -->
+<head>
+ <!-- 头部 -->
+    <meta charset="UTF-8">
+    <title>我的第一个HTML</title>
+ <style type="text/css">
+  p{
+   color: aqua;
+   <!-- 选中P标签，改个颜色 -->
+  }
+ </style>
+</head>
+<body>
+ <!-- 身体 -->
+ <h1>一级标题</h1>
+ <div id="div1">
+  <!-- id是div这个标签的属性,id属性的值是div1，唯一，变? -->
+  用户名: <input type="text" name="username" id="username" placeholder="用户名" class="aa"/>
+  <!-- type属于标签共有的属性，不适合定位，name容易重复 -->
+  <br>
+  密码: <input type="text" name="password" id="password" placeholder="密码" class="bb" />
+  <br>
+  验证码:
+  <br>
+  <button type="button">
+   <span>登录</span>
+   <!-- BUTTON标签有个文本的值是登录，在><之间的部分 -->
+   <!-- 元素在一个元素之内 -->
+  </button>
+ </div>
+ <div id="div2">
+  <p>这是一个段落</p>
+  <a href="https://www.baidu.com">百度一下,你就不知道</a>
+  <!-- 超链接 anchor 锚 -->
+  <a href="https://cn.bing.com" target="_blank">有求必应</a>
+  <!-- 在新窗口中操作 -->
+ </div>
+ <div id="div3">
+  <input type="button"  id="alert" value='alert' onclick="alert('helloalert')" />
+  <input type="button"  id="confirm" value='confirm' onclick="confirm('helloconfirm')" />
+  <input type="button"  id="prompt" value='prompt' onclick="prompt('helloprompt')" />
+  <!-- 三种弹窗，selenium需要切换方可操作 -->
+ </div>
+<div id="div4">
+  <ul>
+   <li>1</li>
+   <li>2</li>
+   <li>3</li>
+   <!-- 无序列表 -->
+  </ul>
+  <ol>
+   <li>呵呵</li>
+   <li>哈哈</li>
+   <li>嘿嘿</li>
+   <!-- 有序列表 -->
+  </ol>
+ </div>
+ <div id="div5"><select multiple="multiple">
+ <!-- 单选就去掉这个multiple的属性 -->
+   <option value="1">10K-13K</option>
+   <option value="2">13K-16K</option>
+   <option value="3">16K-19K</option>
+   <option value="3">19K-25K</option>
+   <!-- 多选下拉列表 -->
+  </select>
+ </div>
+ <iframe id='if' name='nf' width="800" height="600" src="http://127.0.0.1/upload/forum.php"></iframe>
+ <!-- 三种 alert  iframe  window -->
+</body>
+</html>
