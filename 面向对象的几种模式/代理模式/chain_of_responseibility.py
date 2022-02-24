@@ -22,7 +22,7 @@ class RealSubject(Subject):
         f = open(self.filename,"w")
         f.write(contect)
         f.close()
-# sudj = RealSubject("test.txt")
+# sudj = RealSubject("test_t.txt")
 # print(sudj.get_contect())
 class VirtualProxy(Subject):
     def __init__(self,filename):

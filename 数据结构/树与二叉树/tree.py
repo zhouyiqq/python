@@ -36,7 +36,7 @@ class FileSystenTree:
 if __name__ == "__main__":
     tree = FileSystenTree()
     tree.mkdir("var/")
-    tree.mkdir("test/")
+    tree.mkdir("test_t/")
     tree.ls()
     tree.cd("var/")
     tree.mkdir("hellow/")

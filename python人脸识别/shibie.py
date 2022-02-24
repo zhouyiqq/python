@@ -6,11 +6,11 @@ import test
 # path="测试/"  #待读取的文件夹
 
 # X = tf.placeholder(tf.float32, [1, 57*47])
-# conv = test.convolution(X)
+# conv = test_t.convolution(X)
 # saver = tf.compat.v1.train.Saver()
 # session = tf.Session()
 # saver.restore(session, './mod/best.ckpt')
-# p = test.get('a.jpg', X, conv, session, 0)
+# p = test_t.get('a.jpg', X, conv, session, 0)
 
 # path_list=os.listdir(path)
 # path_list.sort() #对读取的路径进行排序

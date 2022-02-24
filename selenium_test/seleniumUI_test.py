@@ -22,14 +22,14 @@ from selenium.webdriver import ActionChains
 #Chorme哪里来的? --在webdriver中__init__.py中有定义from .chrome.webdriver import WebDriver as Chrome
 #所以from selenium import webdriver其实等同于
 #from selenium.webdriver.chrome.webdriver import WebDriver as Chrome ---可读性差
-# driver.get(os.getcwd()+r'\test.html')#打开刚才我们自己写的html文件
+# driver.get(os.getcwd()+r'\test_t.html')#打开刚才我们自己写的html文件
 # driver.find_element('username').send_keys('小鹏长翅')
 # driver = webdriver.Chrome()#打开chrome浏览器
-# html = Path('./test.html')
+# html = Path('./test_t.html')
 # driver.get(str(html.resolve()))#Path.resolve:该方法将一些的 路径/路径段 解析为绝对路径
 # print(str(html.resolve()))
 #第二种转为绝对路径的方法
-# html = os.path.abspath('./test.html')#返回绝对路径
+# html = os.path.abspath('./test_t.html')#返回绝对路径
 # driver = webdriver.Chrome()
 # driver.get(html)
 # os.getcwd('www.baidu.com')
@@ -71,7 +71,7 @@ from selenium.webdriver import ActionChains
 # 1.如果遇到重复的元素，操作的永远是第一个
 # 2.send_keys方法，不会清空原来的内容
 # with webdriver.Chrome() as driver:#打开chrome浏览器
-#     html = Path('./test.html')
+#     html = Path('./test_t.html')
 #     driver.get(str(html.resolve()))#Path.resolve:该方法将一些的 路径/路径段 解析为绝对路径
 #     driver.find_element(By.NAME,'username').send_keys('admin')#在这个元素里写入值
 #     #找到name的值为'username'的标签，并输入'admin'
@@ -81,7 +81,7 @@ from selenium.webdriver import ActionChains
 # 2.可能会变，需要注意识别
 # 3.首字符是数字的要注意css的表达式（后续详细介绍）
 # with webdriver.Chrome() as driver:
-#     html = os.path.abspath('./test.html')#获取绝对路径
+#     html = os.path.abspath('./test_t.html')#获取绝对路径
 #     driver.get(html)
 #     driver.find_element(By.ID,'username').send_keys('admin')
 #     #找到id的值为'username'的标签，并输入'admin'
@@ -91,7 +91,7 @@ from selenium.webdriver import ActionChains
 # 2.class ='bb cc'规定元素的一个或多个类名，等同于class1,class2='bb','cc'
 # 所以不能直接用driver.find_element_by_class_name('bb cc')
 # with webdriver.Chrome() as driver:
-#     html = os.path.abspath('./test.html')#获取绝对路径
+#     html = os.path.abspath('./test_t.html')#获取绝对路径
 #     driver.get(html)
 #     # 1. 输入用户名
 #     driver.find_element(By.CLASS_NAME,'aa').send_keys('admin')
@@ -109,7 +109,7 @@ from selenium.webdriver import ActionChains
 # 2.link_text 完全匹配
 # 3.parti_link_text  部分（模糊）可以是开头是、包含、结尾是
 # with webdriver.Chrome() as driver:
-#     html = os.path.abspath('./test.html')#获取绝对路径
+#     html = os.path.abspath('./test_t.html')#获取绝对路径
 #     driver.get(html)
 #     driver.find_element(By.PARTIAL_LINK_TEXT,'必应').click()
 #     #找到包含'必应'文本的a标签，并点击

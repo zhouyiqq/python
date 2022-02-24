@@ -50,7 +50,7 @@ print(b)
 #         return res
 #     return wrap
 # @decrator0
-# def test(sr):
+# def test_t(sr):
 #     print(sr)
 #     return sr
-# test("ni")
+# test_t("ni")

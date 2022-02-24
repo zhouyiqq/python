@@ -6,7 +6,7 @@ import os
 from multiprocessing.dummy import Pool as ThreadPool
 
 def stoplist():
-    with open('停用词表.txt','r',encoding='utf-8')as f:
+    with open('停用词表.txt', 'r', encoding='utf-8')as f:
         stops=f.readlines()
     return stops
 

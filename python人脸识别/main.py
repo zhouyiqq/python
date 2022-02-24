@@ -31,7 +31,7 @@ times = 1
 
 
 # X = tf.placeholder(tf.float32, [1, 57*47])
-# conv = test.convolution(X)
+# conv = test_t.convolution(X)
 # saver = tf.compat.v1.train.Saver()
 # session = tf.Session()
 # saver.restore(session, './mod/best.ckpt')
