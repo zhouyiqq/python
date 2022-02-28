@@ -75,24 +75,24 @@ def parse_page(json , label):
     print(json)
     if json:
         items = json.get('data').get('cards')
-        print(555555)
+        # print(555555)
         print(items)
         for i in items:
             if i == None:
                 continue
-            print(f"i{i}")
+            # print(f"i{i}")
             i = i.get("card_group")[0]
             item = i.get('mblog')
-            print("item")
-            pprint.pprint(i.get("mblog"))
+            # print("item")
+            # pprint.pprint(i.get("mblog"))
             if item == None:
                 continue
             weibo = {}
             weibo['id'] = item.get('id')
             weibo['label'] = label
             weibo['text'] = pq(item.get('text')).text().replace(" ", "").replace("\n" , "")
-            print(555)
-            print(weibo)
+            # print(555)
+            # print(weibo)
             res.append(weibo)
     # print(333)
     return res
@@ -107,17 +107,17 @@ if __name__ == '__main__':
         try:
             time.sleep(1)         #设置睡眠时间，防止被封号
             json = get_page(page , title )
-            print(222)
+            # print(222)
             # print(json)
             results = parse_page(json , title)
-            print("$"*20)
-            print(results)
+            # print("$"*20)
+            # print(results)
             if requests == None:
                 continue
             for result in results:
                 if result == None:
                     continue
-                print(result)
+                # print(result)
                 s.save(item_list, path , result)
         except TypeError:
             print("完成")
