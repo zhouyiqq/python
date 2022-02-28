@@ -73,6 +73,8 @@ if __name__ == '__main__':
     for name, group in groups:
         ax.plot(group.x, group.y, marker='o', linestyle='', ms=10, label=cluster_names[name],
                 color=cluster_colors[name], mec='none')
+    ax.set_title("聚类图", fontproperties='SimHei', fontsize=13)
+    plt.savefig("./picture/julei.png")  # 保存词云图到本地
     plt.show()
 
     res = labels_to_original(y_pred , corpus)

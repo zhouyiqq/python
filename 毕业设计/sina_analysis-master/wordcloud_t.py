@@ -31,7 +31,7 @@ if os.path.exists(file_name):
     # 显示词云图
     plt.imshow(wd.recolor(color_func=img_colors), interpolation="bilinear")
     plt.axis("off")  # 关闭显示x轴/y轴下标
-    plt.savefig("./data/elsa_cy.png")  # 保存词云图到本地
+    plt.savefig("./picture/elsa_cy.png")  # 保存词云图到本地
     plt.show()
 else:
     print("大哥，你在逗我吗，没文件")

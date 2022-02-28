@@ -50,10 +50,11 @@ def send_email(theme,text):
         # msg['To'] = ','.join(msg_to)
         msg['Subject'] = theme  # 邮件的主题
         ######## 添加附件 - rar/zip
-        if os.path.exists("data.zip"):
-            att_zip = MIMEText(open(r'./data.zip', 'rb').read(), 'base64', 'utf-8')
-        else:
-            to_zip("./data")
+        # if os.path.exists("picture.zip"):
+        to_zip("./picture")
+        att_zip = MIMEText(open(r'./picture.zip', 'rb').read(), 'base64', 'utf-8')
+        # else:
+        #     to_zip("./picture")
         att_zip["Content-Type"] = 'application/octet-stream'
         att_zip["Content-Disposition"] = 'attachment; filename="You.zip"'
         msg.attach(MIMEText(text, 'plain', 'utf-8'))#这里发送文本内容
