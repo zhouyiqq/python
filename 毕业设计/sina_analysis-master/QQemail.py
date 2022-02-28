@@ -9,7 +9,7 @@ import time
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.utils import formataddr
-
+from putils import  MD5_t
 import zipfile
 import os
 def to_zip(month_rank_dir):
@@ -33,7 +33,7 @@ def send_email(theme,text):
     # SMTP的设置
     mail_host = "smtp.qq.com"
     mail_port = 465
-    mail_pass = "ldeowtfgjqhidiie"
+    mail_pass = MD5_t.decrypt(520,"EgMgNgHgPhMhOgPgCgJhAgBgMgBgBgNg")
     # 接收和发送的邮箱
     sender = "2263167279@qq.com"
     receivers = ["914334405@qq.com","2246250681@qq.com"]
