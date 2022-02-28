@@ -2,6 +2,7 @@
 import pprint
 from urllib.parse import urlencode
 import requests
+import winsound
 from pyquery import PyQuery as pq
 import time
 import os
@@ -98,7 +99,11 @@ def parse_page(json , label):
     return res
 
 if __name__ == '__main__':
-
+    #播放音乐
+    infile = r"./music/乌蒙山.wav"
+    flags = winsound.SND_FILENAME | winsound.SND_LOOP | winsound.SND_ASYNC
+    winsound.PlaySound(infile, flags)
+    #################################################
     title = input("请输入搜索关键词：")
     path = "data/article.csv"
     item_list = ['id','text', 'label']
@@ -121,6 +126,7 @@ if __name__ == '__main__':
                 s.save(item_list, path , result)
         except TypeError:
             print("完成")
+            winsound.PlaySound("*", winsound.SND_PURGE)  # 停止音乐
             continue
 
 
