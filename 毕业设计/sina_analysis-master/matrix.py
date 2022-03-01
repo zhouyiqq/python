@@ -27,8 +27,6 @@ def sent2word(line):
             segSentence += word + " "
     return segSentence.strip()
 
-
-
 if __name__ == '__main__':
     df = pd.read_csv('data/article.csv')
     target = codecs.open('data/cut.txt', 'w', encoding='utf-8')

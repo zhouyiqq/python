@@ -16,7 +16,7 @@ def test1():
       print(len(comment)) #输出每页有多少个回复
       comment_list.extend(comment) #将评论内容一个个添加进空列表
    print('评论已经爬取完成')
-   comment_txt = open(r'C:\Users\zy\Desktop\代码仓库\毕业设计\爬取b站评论并制作词云/comment.txt','w',encoding='utf-8') #创建txt文本
+   comment_txt = open(r'/test_t/爬取b站评论并制作词云/comment.txt', 'w', encoding='utf-8') #创建txt文本
 
    for r in comment_list:
 

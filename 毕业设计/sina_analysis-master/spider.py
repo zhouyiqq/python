@@ -108,7 +108,7 @@ if __name__ == '__main__':
     path = "data/article.csv"
     item_list = ['id','text', 'label']
     s = SaveCSV()
-    for page in range(10,20):#循环页面
+    for page in range(0,80):#循环页面
         try:
             time.sleep(1)         #设置睡眠时间，防止被封号
             json = get_page(page , title )
