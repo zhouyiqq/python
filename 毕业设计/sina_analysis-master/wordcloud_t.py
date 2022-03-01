@@ -13,13 +13,13 @@ pic_name = "./data/elsa.jpg"  # 你自己是什么文件名你就写什么文件
 if os.path.exists(file_name):
     with open(file_name, "r",encoding='utf-8') as file:  # 读取文件
         content = file.read()
-        print(content)
+        # print(content)
         if content:  # 判断文本内容是否为空
             # 进行分词处理c 返回的是一个对象 需要使用"".join进行拼接
-            cut_text = jieba.cut(content)
-            # cut_text = content
-            word = " ".join(cut_text)  # 拼接
-    # print(word)
+            # cut_text = jieba.cut(content)
+            word = content
+            # word = " ".join(content)  # 拼接
+    print(word)
     img = np.array(Image.open(pic_name))  # 读取图片
     img_colors =ImageColorGenerator(img)
     # 生成词云图
