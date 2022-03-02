@@ -34,7 +34,6 @@ df[name].value_counts().sort_values().plot.pie(figsize=(8, 8),autopct='%.2f%%',c
 # print(df2.info())
 # print(df2.loc[0])
 # print(df2[["应用系统","当前日费用（元）"]])
-
 # df2[["CPU"]].plot(kind='barh',stacked = True,rot=0)
 # df2[["内存(GB)"]].plot(kind='barh',stacked = True,rot=0)
 # df2[["磁盘(GB)"]].plot(kind='barh',stacked = True,rot=0)

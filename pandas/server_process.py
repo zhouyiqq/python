@@ -3,12 +3,10 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-
 def project_info(project_data, project_name=' '):
     # 获取资源情况
     server_memory = project_data['内存大小'].astype(float)
     memory_labels, memory_distribut = memory_distribution(server_memory)
-
     #获取主机环境分布
     host_environment = project_data['主机环境']
     host_labels, host_env_nums=host_env(host_environment)
@@ -32,7 +30,6 @@ def draw_multipie(labels,data,title,project_name):
         plt.subplots_adjust(left=None, bottom=None, right=None, top=None, wspace=0.8, hspace=0.5)  # 调整子图间距
     plt.savefig('./data/'+project_name+'.jpg')
     plt.show()
-
 
 def project_server(project_id):
     # 去重取出产品编码
