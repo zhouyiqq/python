@@ -8,7 +8,6 @@ WALKABLE = 'walkable'
 PARENT = 'parent'
 WEIGHT = 'weight'
 
-
 def my_graph():
     M = 7
     N = 9
