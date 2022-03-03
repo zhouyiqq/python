@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" addBOMForNewFiles="with BOM">
+    <file url="file://$PROJECT_DIR$/Notebook/Numpy" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Notebook/Python" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Notebook/matplotlib" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Notebook/opencv" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sort algorithm/logger/logs/20211217.log" charset="GBK" />
-    <file url="PROJECT" charset="UTF-8" />
+    <file url="PROJECT" charset="GBK" />
   </component>
 </project>
