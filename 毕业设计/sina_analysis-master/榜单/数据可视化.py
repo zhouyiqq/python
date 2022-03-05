@@ -19,7 +19,7 @@ df["source"].value_counts().sort_values().plot.bar(figsize=(20,10))
 plt.show()"""
 ##############################################################################
 choice = ["微博","知乎","微信","百度","哔哩哔哩","知乎","微信读书","抖音"]
-index = 3
+index = 4
 i=1
 data =[]
 for source,contect,heat in zip(df.source,df.content,df.heat):
@@ -29,10 +29,17 @@ for source,contect,heat in zip(df.source,df.content,df.heat):
         print(heat)
         pattern = re.compile(r'[\u4e00-\u9fa5]')
         heat = re.sub(pattern, "", heat)
-        data.append([contect,float(heat)])
+        try:
+            if float(heat)>10000:
+                heat = float(heat)/10000
+            else:
+                heat = float(heat)
+            data.append([contect,heat])
+        except Exception as e:
+            print(e)
         i+=1
 # print(data)
-df1=pd.DataFrame(data,columns=["标号","热度"],index=[_[0] for _ in data])
-# print(df1)
-df1[["热度(单位/万)"]].plot(kind ="bar",title=choice[index])
+df1=pd.DataFrame(data,columns=["标号","热度/万"],index=[_[0] for _ in data])
+print(df1)
+df1[["热度/万"]].plot(kind ="bar",title=choice[index])
 plt.show()

@@ -23,7 +23,7 @@ class GetHot():
         df = pandas.DataFrame()
         df.to_excel(path, index=False)
         res = pandas.read_excel(path,engine=None)
-        text = ["微博","知乎","微信","百度"]
+        # text = ["微博","知乎","微信","百度"]
         # res = pandas.DataFrame()
         # # 显示所有列
         # pandas.set_option('display.max_columns', None)
