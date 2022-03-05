@@ -34,5 +34,5 @@ for source,contect,heat in zip(df.source,df.content,df.heat):
 # print(data)
 df1=pd.DataFrame(data,columns=["标号","热度"],index=[_[0] for _ in data])
 # print(df1)
-df1[["热度(单位万)"]].plot(kind ="bar",title=choice[index])
+df1[["热度(单位/万)"]].plot(kind ="bar",title=choice[index])
 plt.show()
