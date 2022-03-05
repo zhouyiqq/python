@@ -126,7 +126,7 @@ if __name__ == '__main__':
                 s.save(item_list, path , result)
         except TypeError:
             print("完成")
-            winsound.PlaySound("*", winsound.SND_PURGE)  # 停止音乐
+            # winsound.PlaySound("*", winsound.SND_PURGE)  # 停止音乐
             continue
 
 

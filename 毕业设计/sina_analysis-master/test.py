@@ -1,3 +1,4 @@
+import winsound
 from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -6,6 +7,9 @@ import numpy as np
 if __name__ == '__main__':
     datas = np.array([[1,1],[2,3],[4,5],[2,1],[-1,-1],[-2,-3],[-4,-5],[-2,-1]])
     x,y = datas[:,0],datas[:,1]
+    # infile = r"./music/乌蒙山.wav"
+    # flags = winsound.SND_FILENAME | winsound.SND_LOOP | winsound.SND_ASYNC
+    # winsound.PlaySound(infile, flags)
 
     # 设置颜色
     cluster_colors = {0: 'r', 1: 'yellow', 2: 'b', 3: 'chartreuse', 4: 'purple', 5: '#FFC0CB', 6: '#6A5ACD',

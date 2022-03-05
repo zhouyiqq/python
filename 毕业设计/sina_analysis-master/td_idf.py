@@ -18,7 +18,7 @@ def labels_to_original(labels, forclusterlist):
 
 if __name__ == '__main__':
     # 分类数
-    num = 3
+    num = 8
 
     # 读取语料库
     corpus = []
@@ -79,9 +79,8 @@ if __name__ == '__main__':
 
     res = labels_to_original(y_pred , corpus)
 
-    for i in range(len(res)):
-        if i:
-            for j in range(5):
+    for i in range(len(res)-1):
+            for j in range(10):
                 print(res[i][j])
             print("=======================")
 
