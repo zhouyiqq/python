@@ -28,7 +28,7 @@ def sent2word(line,stopword):
     return segSentence.strip()#移除字符串头尾的空格和换行符
 
 if __name__ == '__main__':
-    df = pd.read_csv('data/article.csv')
+    df = pd.read_csv('data/女神节.csv')
     target = codecs.open('data/cut.txt', 'w', encoding='utf-8')
     stopword = ['\t',"的","了","是","大","上","和","去","人","我","你","还","在","也","有","又","不","被","或","像"]
     stop = open('data/stopword', 'r', encoding='utf-8')
