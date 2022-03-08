@@ -1,3 +1,5 @@
+import sys
+
 import requests
 import bs4
 from bs4 import BeautifulSoup
@@ -5,15 +7,16 @@ import json
 import time
 from selenium import webdriver
 import pymysql
-
+global password
+password='123456'
 def createDb():
-    db = pymysql.connect(host='localhost', user='root', password='', port=3306)
+    db = pymysql.connect(host='localhost', user='root', password=password, port=3306,charset='utf8mb4')
     cursor = db.cursor();
-    sql = 'CREATE DATABASE bilibili'
+    sql = 'CREATE DATABASE bilibili CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci'
     cursor.execute(sql)
     cursor.close()
-    db = pymysql.connect(host='localhost', user='root', password='',
-                         port=3306, db='bilibili')
+    db = pymysql.connect(host='localhost', user='root', password=password,
+                         port=3306, db='bilibili',charset='utf8mb4')
     cursor = db.cursor()
     sql = 'CREATE TABLE IF NOT EXISTS up (id int(11) NOT NULL AUTO_INCREMENT, ' \
           'up_id VARCHAR(255) NOT NULL,up_name VARCHAR(255) NOT NULL, ' \
@@ -24,8 +27,8 @@ def createDb():
           'PRIMARY KEY (id,up_id))'
     cursor.execute(sql)
     db.close()
-    db = pymysql.connect(host='localhost', user='root', password='',
-                         port=3306, db='bilibili')
+    db = pymysql.connect(host='localhost', user='root', password=password,
+                         port=3306, db='bilibili',charset='utf8mb4')
     cursor = db.cursor()
     sql = 'CREATE TABLE IF NOT EXISTS fans (id int(11) NOT NULL AUTO_INCREMENT,' \
           'up_id VARCHAR(255) NOT NULL,fans_id VARCHAR(255) NOT NULL,' \
@@ -37,8 +40,8 @@ def createDb():
     db.close()
 
 def insertUp(mid,name,sex,sign,birthday,title):
-    db = pymysql.connect(host ='localhost', user='root', password ='',
-                         port=3306, db='bilibili')
+    db = pymysql.connect(host ='localhost', user='root', password =password,
+                         port=3306, db='bilibili',charset='utf8mb4')
     cursor = db.cursor()
     sql = 'INSERT INTO up(up_id,up_name,sex,sign,birthday,title) values(%s,%s,%s,%s,%s,%s)'
     val = (mid,name,sex,sign,birthday,title)
@@ -51,16 +54,21 @@ def insertUp(mid,name,sex,sign,birthday,title):
 
 
 def insertFans(up_mid,fans_mid, time, uname, viplevel, sex, level):
-    db = pymysql.connect(host='localhost', user='root', password='',
-                         port=3306, db='bilibili')
+    db = pymysql.connect(host='localhost', user='root', password=password,
+                         port=3306, db='bilibili',charset='utf8mb4')
+    print("连接数据库成功")
     cursor = db.cursor()
     sql = 'INSERT INTO fans(up_id,fans_id,fans_name,sex,fans_level,viplevel,time) values(%s,%s,%s,%s,%s,%s,%s)'
     val = (up_mid, fans_mid, uname, sex, level, viplevel, time)
+    print(val)
+    print(1111)
     try:
         cursor.execute(sql, val)
+        # print("写入数据库")
         db.commit()
     except:
         db.rollback()
+    # print("关闭数据库")
     db.close()
 
 def getPage(mid,n,href):
@@ -103,15 +111,20 @@ def getUpInfoBySelenium(href, mid):
     opt.add_argument('--user-agent=%s' % user_agent)
     driver = webdriver.Firefox(options=opt)
     try:
-        driver.get('https:' + href+'/video')
+        # driver.get('https:' + href+'/video')
+        driver.get(href + '/video')
         html = driver.execute_script("return document.documentElement.outerHTML")  # 必须执行js
         time.sleep(2)
         soup = BeautifulSoup(driver.page_source, 'html.parser')
         focus = soup.find('p', 'n-data-v space-attention').text  # 关注数
         fans = soup.find('p', 'n-data-v space-fans').text  # 粉丝数
         div = soup.find('div', 'n-statistics')
-        praise = div.contents[2].find('p', 'n-data-v').text  # 获赞数
-        view = div.contents[3].find('p', 'n-data-v').text  # 播放数
+        try:
+            praise = div.contents[2].find('p', 'n-data-v').text  # 获赞数
+            view = div.contents[3].find('p', 'n-data-v').text  # 播放数
+        except:
+            praise = "0"
+            view = "0"
         div = soup.find('div', id='submit-video-type-filter') #分区
         a = div.find_all('a', attrs={'class': ''})
         dict = {}
@@ -121,8 +134,8 @@ def getUpInfoBySelenium(href, mid):
         maxArea = max(zip(dict.values(), dict.keys()))
         print("关注数" + str(focus), "粉丝数" + str(fans), "获赞数" + str(praise),
               "播放数：" + str(view),"主分区：" + maxArea[1] + "区")
-        db = pymysql.connect(host='localhost', user='root', password='',
-                             port=3306, db='bilibili')
+        db = pymysql.connect(host='localhost', user='root', password=password,
+                             port=3306, db='bilibili',charset='utf8mb4')
         cursor = db.cursor()
         sql = 'UPDATE up SET focus = %s,fans =%s,praise =%s,view =%s,area =%s WHERE up_id = %s'
         val = (focus[:-1], fans[:-1], praise[:-1], view[:-1], maxArea[1], mid)
@@ -144,42 +157,56 @@ def viplevel(vip):
         vipname = '大会员'
     return vipname
 
-response = requests.get('https://www.kanbilibili.com/rank/ups/fans')
-soup = BeautifulSoup(response.text, 'html.parser')
-a = soup.find('div', 'ups-list').find_all('a', limit=3)
-createDb()
-for each in a:
-    href = str(each.get('href')) # 每个up主个人空间
-    up = getUserDetails(href.lstrip()[21:]) #获取up主个人信息(json)
-    json_obj = json.loads(up.text)
-    up_mid = json_obj['data']['mid']
-    name = json_obj['data']['name']
-    sex = json_obj['data']['sex']
-    sign = json_obj['data']['sign']
-    level = json_obj['data']['level']
-    birthday = json_obj['data']['birthday']
-    title = json_obj['data']['official']['title']
-    print("up主uid："+str(up_mid),"用户名："+name,"性别："+sex,
-          "留言："+sign,"生日："+birthday,"称号："+title)
-    insertUp(str(up_mid),name,sex,sign,birthday,title)
+# response = requests.get('https://www.kanbilibili.com/rank/ups/fans')
+# soup = BeautifulSoup(response.text, 'html.parser')
+# a = soup.find('div', 'ups-list').find_all('a', limit=3)
+# createDb()#创建数据库
+# sys.exit(0)
+href = "https://space.bilibili.com/116683"# 每个up主个人空间
+# for each in a:
+# href = str(each.get('href')) # 每个up主个人空间
+# href = href # 每个up主个人空间
+a =href.lstrip()[27:]
+print(a)
+up = getUserDetails(href.lstrip()[27:]) #获取up主个人信息(json)
+json_obj = json.loads(up.text)
+if json_obj.get("code") == -400:
+    print("请求错误")
+    sys.exit(0)
+up_mid = json_obj['data']['mid']
+name = json_obj['data']['name']
+sex = json_obj['data']['sex']
+sign = json_obj['data']['sign']
+level = json_obj['data']['level']
+birthday = json_obj['data']['birthday']
+title = json_obj['data']['official']['title']
+print("up主uid："+str(up_mid),"用户名："+name,"性别："+sex,
+      "留言："+sign,"生日："+birthday,"称号："+title)
+insertUp(str(up_mid),name,sex,sign,birthday,title)
+try:
     getUpInfoBySelenium(href,str(up_mid)) # 打印粉丝数、播放数、分区等(selenium)
-    print("Ta的粉丝：")
-    print("----------------")
-    for i in range(1, 5):
-        r = getPage(href.lstrip()[21:],i,href);
-        json_obj = json.loads(r.text); #返回json格式
-        for entry in json_obj['data']['list']:
-            fans_mid = entry['mid']
-            mtime = entry['mtime']
-            uname = entry['uname']
-            vip = entry['vip']['vipType']
-            fansDetails = getUserDetails(fans_mid)
-            json_obj = json.loads(fansDetails.text)
+except:
+    print("无法打印up主数据")
+print("Ta的粉丝：")
+print("----------------")
+for i in range(0, 30):
+    r = getPage(href.lstrip()[27:],i,href);
+    json_obj = json.loads(r.text); #返回json格式
+    for entry in json_obj['data']['list']:
+        fans_mid = entry['mid']
+        mtime = entry['mtime']
+        uname = entry['uname']
+        vip = entry['vip']['vipType']
+        fansDetails = getUserDetails(fans_mid)
+        json_obj = json.loads(fansDetails.text)
+        try:
             sex = json_obj['data']['sex']
-            level = json_obj['data']['level']
-            print("uid：" + str(fans_mid), "关注时间："+ time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(mtime)),
-                               "用户名：" + uname, "vip等级：" + viplevel(vip), "性别："+sex, "账户等级："+str(level))
-            insertFans(str(up_mid),str(fans_mid), time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(mtime)),
-                       uname,viplevel(vip),sex,str(level))
-        time.sleep(5) # 防止封ip
-    print("----------------")
+        except:
+            sex = "保密"
+        level = json_obj['data']['level']
+        print("uid：" + str(fans_mid), "关注时间："+ time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(mtime)),
+                           "用户名：" + uname, "vip等级：" + viplevel(vip), "性别："+sex, "账户等级："+str(level))
+        insertFans(str(up_mid),str(fans_mid), time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(mtime)),
+                   uname,viplevel(vip),sex,str(level))
+    time.sleep(5) # 防止封ip
+print("----------------")

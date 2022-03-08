@@ -1,0 +1,431 @@
+1646729468102	geckodriver	INFO	Listening on 127.0.0.1:32462
+1646729471192	mozrunner::runner	INFO	Running command: "D:\\Mozilla Firefox\\firefox.exe" "--marionette" "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0" "--remote-debugging-port" "32463" "-no-remote" "-profile" "C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofile1xNYDg"
+1646729474558	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofile1xNYDg\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:32463/devtools/browser/928f5e0b-81c4-43bf-84d1-d16d3b66e4b6
+1646729478967	Marionette	INFO	Listening on port 32469
+1646729479290	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1646729488766	Marionette	INFO	Stopped listening on port 32469
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1646729514455	geckodriver	INFO	Listening on 127.0.0.1:32521
+1646729517560	mozrunner::runner	INFO	Running command: "D:\\Mozilla Firefox\\firefox.exe" "--marionette" "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0" "--remote-debugging-port" "32522" "-no-remote" "-profile" "C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofile4bbh3F"
+1646729517889	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofile4bbh3F\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:32522/devtools/browser/27eed670-1586-49ca-ad51-6dedcf38a210
+1646729519862	Marionette	INFO	Listening on port 32527
+1646729520236	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1646729529502	Marionette	INFO	Stopped listening on port 32527
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1646729588342	geckodriver	INFO	Listening on 127.0.0.1:32577
+1646729591399	mozrunner::runner	INFO	Running command: "D:\\Mozilla Firefox\\firefox.exe" "--marionette" "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0" "--remote-debugging-port" "32578" "-no-remote" "-profile" "C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofileOobrUZ"
+1646729591690	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofileOobrUZ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:32578/devtools/browser/6f223425-c708-4f93-a68a-2ed0e6ddf2a4
+1646729593835	Marionette	INFO	Listening on port 32583
+1646729594054	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+1646729599064	Marionette	INFO	Stopped listening on port 32583
+[Parent 11472, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1646729683080	geckodriver	INFO	Listening on 127.0.0.1:1033
+1646729686160	mozrunner::runner	INFO	Running command: "D:\\Mozilla Firefox\\firefox.exe" "--marionette" "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0" "--remote-debugging-port" "1034" "-no-remote" "-profile" "C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofilePSj7mZ"
+1646729686466	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofilePSj7mZ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:1034/devtools/browser/bb0ad664-6c52-4ec7-a81a-89257e414a43
+1646729688464	Marionette	INFO	Listening on port 1039
+1646729688852	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+1646729693432	Marionette	INFO	Stopped listening on port 1039
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1646729739979	geckodriver	INFO	Listening on 127.0.0.1:1120
+1646729743057	mozrunner::runner	INFO	Running command: "D:\\Mozilla Firefox\\firefox.exe" "--marionette" "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0" "--remote-debugging-port" "1121" "-no-remote" "-profile" "C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofilegNxdEy"
+1646729743372	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofilegNxdEy\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:1121/devtools/browser/756fa3b2-306c-4837-8bbc-aef79f95df2f
+1646729745336	Marionette	INFO	Listening on port 1126
+1646729745793	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+1646729750039	Marionette	INFO	Stopped listening on port 1126
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1646729795486	geckodriver	INFO	Listening on 127.0.0.1:1203
+1646729798598	mozrunner::runner	INFO	Running command: "D:\\Mozilla Firefox\\firefox.exe" "--marionette" "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0" "--remote-debugging-port" "1204" "-no-remote" "-profile" "C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofileWSpm5E"
+1646729798971	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofileWSpm5E\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:1204/devtools/browser/194a5379-f749-44e4-ab5f-9e56ff7caac2
+1646729801088	Marionette	INFO	Listening on port 1209
+1646729801281	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+1646729878502	geckodriver	INFO	Listening on 127.0.0.1:1302
+1646729881613	mozrunner::runner	INFO	Running command: "D:\\Mozilla Firefox\\firefox.exe" "--marionette" "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0" "--remote-debugging-port" "1303" "-no-remote" "-profile" "C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofilehfKOAw"
+1646729881927	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofilehfKOAw\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:1303/devtools/browser/b6d2c04e-d278-41a2-9685-e5768b17ba52
+1646729883837	Marionette	INFO	Listening on port 1308
+1646729884281	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+1646729888523	Marionette	INFO	Stopped listening on port 1308
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1646729938993	geckodriver	INFO	Listening on 127.0.0.1:1385
+1646729942079	mozrunner::runner	INFO	Running command: "D:\\Mozilla Firefox\\firefox.exe" "--marionette" "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0" "--remote-debugging-port" "1386" "-no-remote" "-profile" "C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofileucoMZA"
+1646729942403	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofileucoMZA\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:1386/devtools/browser/152011f7-6fbb-4db0-a442-4bd94b69cbbf
+1646729944507	Marionette	INFO	Listening on port 1391
+1646729944755	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+1646729948894	Marionette	INFO	Stopped listening on port 1391
+1646729984306	geckodriver	INFO	Listening on 127.0.0.1:1471
+1646729987390	mozrunner::runner	INFO	Running command: "D:\\Mozilla Firefox\\firefox.exe" "--marionette" "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0" "--remote-debugging-port" "1472" "-no-remote" "-profile" "C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofileyErzc9"
+1646729987692	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofileyErzc9\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:1472/devtools/browser/aa4d1eaf-3278-44c7-a55b-11df72ab9398
+1646729989618	Marionette	INFO	Listening on port 1477
+1646729990075	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+1646729994362	Marionette	INFO	Stopped listening on port 1477
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1646730045587	geckodriver	INFO	Listening on 127.0.0.1:1047
+1646730048648	mozrunner::runner	INFO	Running command: "D:\\Mozilla Firefox\\firefox.exe" "--marionette" "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0" "--remote-debugging-port" "1048" "-no-remote" "-profile" "C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofileRUPA4h"
+1646730048987	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofileRUPA4h\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:1048/devtools/browser/0f7ad9b2-b6f3-4cc3-9b31-0fe940470086
+1646730050963	Marionette	INFO	Listening on port 1053
+1646730051313	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+1646730055708	Marionette	INFO	Stopped listening on port 1053
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1646730123160	geckodriver	INFO	Listening on 127.0.0.1:1134
+1646730126260	mozrunner::runner	INFO	Running command: "D:\\Mozilla Firefox\\firefox.exe" "--marionette" "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0" "--remote-debugging-port" "1135" "-no-remote" "-profile" "C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofile7ZpLbK"
+1646730126632	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofile7ZpLbK\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:1135/devtools/browser/24085659-f95e-42ce-83f6-138016855a9b
+1646730128598	Marionette	INFO	Listening on port 1140
+1646730128951	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+1646730133690	Marionette	INFO	Stopped listening on port 1140
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1646731132859	geckodriver	INFO	Listening on 127.0.0.1:1689
+1646731135946	mozrunner::runner	INFO	Running command: "D:\\Mozilla Firefox\\firefox.exe" "--marionette" "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0" "--remote-debugging-port" "1690" "-no-remote" "-profile" "C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofilet0RScl"
+1646731136263	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofilet0RScl\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:1690/devtools/browser/8914d22a-87d1-4bba-8c94-909c9f22c6a7
+1646731138275	Marionette	INFO	Listening on port 1695
+1646731138620	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+1646731143142	Marionette	INFO	Stopped listening on port 1695
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1646731403408	geckodriver	INFO	Listening on 127.0.0.1:1812
+1646731406490	mozrunner::runner	INFO	Running command: "D:\\Mozilla Firefox\\firefox.exe" "--marionette" "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0" "--remote-debugging-port" "1813" "-no-remote" "-profile" "C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofile0za6Hd"
+1646731406790	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofile0za6Hd\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:1813/devtools/browser/af69fdb7-fed2-4552-98ee-8d2c231aa945
+1646731408736	Marionette	INFO	Listening on port 1818
+1646731409157	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: services.settings: 
+  main/query-stripping Signature failed  InvalidSignatureError: Invalid content signature (main/query-stripping)
+console.error: services.settings: 
+  main/query-stripping local data was corrupted
+console.warn: services.settings: main/query-stripping Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/query-stripping Signature failed again InvalidSignatureError: Invalid content signature (main/query-stripping)
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+1646731415445	Marionette	INFO	Stopped listening on port 1818
+
+###!!! [Child][PContentChild] Error: Send(msgname=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1646731486811	geckodriver	INFO	Listening on 127.0.0.1:1981
+1646731489907	mozrunner::runner	INFO	Running command: "D:\\Mozilla Firefox\\firefox.exe" "--marionette" "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0" "--remote-debugging-port" "1982" "-no-remote" "-profile" "C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofileN7yzPF"
+1646731490238	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofileN7yzPF\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:1982/devtools/browser/891c2784-e5c2-4f62-ad69-9cd2f862e8b4
+1646731492201	Marionette	INFO	Listening on port 1987
+1646731492593	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: services.settings: 
+  main/query-stripping Signature failed  InvalidSignatureError: Invalid content signature (main/query-stripping)
+console.error: services.settings: 
+  main/query-stripping local data was corrupted
+console.warn: services.settings: main/query-stripping Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/query-stripping Signature failed again InvalidSignatureError: Invalid content signature (main/query-stripping)
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+1646731496875	Marionette	INFO	Stopped listening on port 1987
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1646731693793	geckodriver	INFO	Listening on 127.0.0.1:2288
+1646731696877	mozrunner::runner	INFO	Running command: "D:\\Mozilla Firefox\\firefox.exe" "--marionette" "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0" "--remote-debugging-port" "2289" "-no-remote" "-profile" "C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofileeXEwr1"
+1646731697192	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofileeXEwr1\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:2289/devtools/browser/c7a39eed-82b1-43e6-a05c-efb0f63682bc
+1646731699146	Marionette	INFO	Listening on port 2294
+1646731699556	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: services.settings: 
+  main/query-stripping Signature failed  InvalidSignatureError: Invalid content signature (main/query-stripping)
+console.error: services.settings: 
+  main/query-stripping local data was corrupted
+console.warn: services.settings: main/query-stripping Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/query-stripping Signature failed again InvalidSignatureError: Invalid content signature (main/query-stripping)
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+1646731704157	Marionette	INFO	Stopped listening on port 2294
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1646731887959	geckodriver	INFO	Listening on 127.0.0.1:2495
+1646731891009	mozrunner::runner	INFO	Running command: "D:\\Mozilla Firefox\\firefox.exe" "--marionette" "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0" "--remote-debugging-port" "2496" "-no-remote" "-profile" "C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofileQrr7qi"
+1646731891319	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofileQrr7qi\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:2496/devtools/browser/1ce7d7bc-102e-456a-a1e2-2df9341ea563
+1646731893283	Marionette	INFO	Listening on port 2501
+1646731893682	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: services.settings: 
+  main/query-stripping Signature failed  InvalidSignatureError: Invalid content signature (main/query-stripping)
+console.error: services.settings: 
+  main/query-stripping local data was corrupted
+console.warn: services.settings: main/query-stripping Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/query-stripping Signature failed again InvalidSignatureError: Invalid content signature (main/query-stripping)
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+1646731898447	Marionette	INFO	Stopped listening on port 2501
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1646732049759	geckodriver	INFO	Listening on 127.0.0.1:2719
+1646732052835	mozrunner::runner	INFO	Running command: "D:\\Mozilla Firefox\\firefox.exe" "--marionette" "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0" "--remote-debugging-port" "2720" "-no-remote" "-profile" "C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofilekirisE"
+1646732053126	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofilekirisE\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:2720/devtools/browser/1cbffe93-b21e-43e8-b832-ffd190a55906
+1646732055086	Marionette	INFO	Listening on port 2725
+1646732055491	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+1646732060105	Marionette	INFO	Stopped listening on port 2725
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1646733184527	geckodriver	INFO	Listening on 127.0.0.1:6123
+1646733187571	mozrunner::runner	INFO	Running command: "D:\\Mozilla Firefox\\firefox.exe" "--marionette" "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0" "--remote-debugging-port" "6124" "-no-remote" "-profile" "C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofileMM5Jox"
+1646733187942	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofileMM5Jox\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:6124/devtools/browser/8b7aaa19-13e1-4550-a639-cf3ba531ff47
+1646733189906	Marionette	INFO	Listening on port 6129
+1646733190239	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: services.settings: 
+  main/query-stripping Signature failed  InvalidSignatureError: Invalid content signature (main/query-stripping)
+console.error: services.settings: 
+  main/query-stripping local data was corrupted
+console.warn: services.settings: main/query-stripping Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/query-stripping Signature failed again InvalidSignatureError: Invalid content signature (main/query-stripping)
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+1646733194546	Marionette	INFO	Stopped listening on port 6129
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1646735797466	geckodriver	INFO	Listening on 127.0.0.1:24548
+1646735800511	mozrunner::runner	INFO	Running command: "D:\\Mozilla Firefox\\firefox.exe" "--marionette" "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0" "--remote-debugging-port" "24549" "-no-remote" "-profile" "C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofileGgRMTw"
+1646735800954	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofileGgRMTw\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:24549/devtools/browser/503bf8b6-4097-4cc9-8503-6b17865d7627
+1646735803011	Marionette	INFO	Listening on port 24554
+1646735803176	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: services.settings: 
+  main/query-stripping Signature failed  InvalidSignatureError: Invalid content signature (main/query-stripping)
+console.error: services.settings: 
+  main/query-stripping local data was corrupted
+console.warn: services.settings: main/query-stripping Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/query-stripping Signature failed again InvalidSignatureError: Invalid content signature (main/query-stripping)
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+1646735807312	Marionette	INFO	Stopped listening on port 24554
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1646738380440	geckodriver	INFO	Listening on 127.0.0.1:1231
+1646738383032	mozrunner::runner	INFO	Running command: "D:\\Mozilla Firefox\\firefox.exe" "--marionette" "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0" "--remote-debugging-port" "1232" "-no-remote" "-profile" "C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofileEDPhQe"
+1646738384218	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofileEDPhQe\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:1232/devtools/browser/13499e7a-6d75-4f71-97d1-da1e6b75d778
+1646738387029	Marionette	INFO	Listening on port 1239
+1646738387208	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+1646738392002	Marionette	INFO	Stopped listening on port 1239
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1646739179295	geckodriver	INFO	Listening on 127.0.0.1:1088
+1646739182353	mozrunner::runner	INFO	Running command: "D:\\Mozilla Firefox\\firefox.exe" "--marionette" "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0" "--remote-debugging-port" "1089" "-no-remote" "-profile" "C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofileVEXrfk"
+1646739182691	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofileVEXrfk\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:1089/devtools/browser/66185eb2-e972-4482-ac24-b91817936aa9
+1646739184710	Marionette	INFO	Listening on port 1094
+1646739185029	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+1646739189166	Marionette	INFO	Stopped listening on port 1094
+1646739484088	geckodriver	INFO	Listening on 127.0.0.1:1044
+1646739487157	mozrunner::runner	INFO	Running command: "D:\\Mozilla Firefox\\firefox.exe" "--marionette" "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0" "--remote-debugging-port" "1045" "-no-remote" "-profile" "C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofile5gRB1v"
+1646739487450	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofile5gRB1v\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:1045/devtools/browser/655932ef-be3e-43d4-8c52-1d4c4a2c9043
+1646739489460	Marionette	INFO	Listening on port 1050
+1646739489807	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: services.settings: 
+  main/query-stripping Signature failed  InvalidSignatureError: Invalid content signature (main/query-stripping)
+console.error: services.settings: 
+  main/query-stripping local data was corrupted
+console.warn: services.settings: main/query-stripping Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/query-stripping Signature failed again InvalidSignatureError: Invalid content signature (main/query-stripping)
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+1646739492003	Marionette	INFO	Stopped listening on port 1050
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1646739529589	geckodriver	INFO	Listening on 127.0.0.1:1121
+1646739532660	mozrunner::runner	INFO	Running command: "D:\\Mozilla Firefox\\firefox.exe" "--marionette" "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0" "--remote-debugging-port" "1122" "-no-remote" "-profile" "C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofiletBYg47"
+1646739532960	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofiletBYg47\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:1122/devtools/browser/2281e5f1-52ad-411a-87e4-23aa0f409aaf
+1646739534874	Marionette	INFO	Listening on port 1127
+1646739535317	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: services.settings: 
+  main/query-stripping Signature failed  InvalidSignatureError: Invalid content signature (main/query-stripping)
+console.error: services.settings: 
+  main/query-stripping local data was corrupted
+console.warn: services.settings: main/query-stripping Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/query-stripping Signature failed again InvalidSignatureError: Invalid content signature (main/query-stripping)
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+1646739541659	Marionette	INFO	Stopped listening on port 1127
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+

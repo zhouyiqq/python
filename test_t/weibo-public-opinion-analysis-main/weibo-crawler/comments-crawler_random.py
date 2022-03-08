@@ -221,9 +221,8 @@ def run(ids):
 if __name__ == '__main__':
 	#由于微博限制，只能爬取前五十页的
 	#里面的文件是爬取到的正文文件
-	bid=extract('..//微博正文爬取//正文.xlsx',1)#1是bid，2是u_id
-	uid=extract('..//微博正文爬取//正文.xlsx',2)
-
+	# bid=extract('..//微博正文爬取//正文.xlsx',1)#1是bid，2是u_id
+	# uid=extract('..//微博正文爬取//正文.xlsx',2)
 	ids=[]#将bid和uid匹配并以嵌套列表形式加入ids
 	for i,j in zip(bid,uid):
 		ids.append([i,j])
