@@ -160,6 +160,8 @@ def getUpInfoBySelenium(href, mid):
             #这两个数据登录才有显示
             praise = div.contents[2].find('p', 'n-data-v').text  # 获赞数
             view = div.contents[3].find('p', 'n-data-v').text  # 播放数
+            print("#"*20)
+            print(praise,view)
         except:
             praise = "0"
             view = "0"
@@ -179,7 +181,8 @@ def getUpInfoBySelenium(href, mid):
                              port=3306, db='bilibili',charset='utf8mb4')
         cursor = db.cursor()
         sql = 'UPDATE up SET focus = %s,fans =%s,praise =%s,view =%s,area =%s WHERE up_id = %s'
-        val = (focus[:-1], fans[:-1], praise[:-1], view[:-1], maxArea[1], mid)
+        # val = (focus[:-1], fans[:-1], praise[:-1], view[:-1], maxArea[1], mid)
+        val = (focus, fans, praise, view, maxArea[1], mid)
         try:
             cursor.execute(sql, val)
             db.commit()
@@ -203,7 +206,7 @@ def viplevel(vip):
 # a = soup.find('div', 'ups-list').find_all('a', limit=3)
 # createDb()#创建数据库
 # sys.exit(0)
-href = "https://space.bilibili.com/116683"# 每个up主个人空间
+href = "https://space.bilibili.com/72270557"# 每个up主个人空间
 # for each in a:
 # href = str(each.get('href')) # 每个up主个人空间
 # href = href # 每个up主个人空间

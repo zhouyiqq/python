@@ -1,8 +1,5 @@
 # coding:utf-8
-# version:python3.7
-# author:Ivy
 import random
-
 import requests
 import re
 
