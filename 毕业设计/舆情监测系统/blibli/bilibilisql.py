@@ -1,7 +1,7 @@
 import pymysql
 print("查询某up主的粉丝性别构成(UID)：")
 # uid = input()
-uid ="23326926"
+uid ="632887"
 db = pymysql.connect(host='localhost', user='root', password='123456',
                          port=3306, db='bilibili')
 cursor = db.cursor()
@@ -27,7 +27,7 @@ print("请输入匹配规格：粉丝数，播放数，点赞数；<，>；数�
 # else:
 #     string += '>'
 # string += split3
-string = "fans < 100"
+string = "fans"
 print(string)
 sql = 'select * from up where '+string
 cursor.execute(sql)

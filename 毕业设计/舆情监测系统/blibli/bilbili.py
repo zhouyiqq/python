@@ -1,5 +1,5 @@
 import sys
-
+from selenium.webdriver.support.ui import WebDriverWait
 import requests
 import bs4
 from bs4 import BeautifulSoup
@@ -110,8 +110,45 @@ def getUpInfoBySelenium(href, mid):
     opt = webdriver.FirefoxOptions()
     opt.add_argument('--user-agent=%s' % user_agent)
     driver = webdriver.Firefox(options=opt)
+    # driver.get('https://passport.bilibili.com/ajax/miniLogin/minilogin')
+    # username = input("plz enter your phone number")
+    # password = input("plz enter your pwd")
+    # driver.find_element('login-username').send_keys(username)
+    # driver.find_element('login-passwd').send_keys(password)
+    # driver.find_element('login-submit').click()
+    # driver.get('http://space.bilibili.com/#!/favlist')
+    # print(driver.page_source)
     try:
         # driver.get('https:' + href+'/video')
+        # username = input("plz enter your phone number")
+        # password = input("plz enter your pwd")
+        # username = "15537664156"
+        # password = "www1251314"
+        # try:
+        #     driver.get('https://passport.bilibili.com/ajax/miniLogin/minilogin')
+        #     driver.find_element('login-username').send_keys(username)
+        #     driver.find_element('login-passwd').send_keys(password)
+        #     driver.find_element('login-submit').click()
+        # except:
+        #     print("无法登录")
+
+        # 记得写完整的url 包括http和https
+        # # 首先清除由于浏览器打开已有的cookies
+        # driver.delete_all_cookies()
+        # driver.get('https://passport.bilibili.com/ajax/miniLogin/minilogin')
+        # # 程序打开网页后20秒内手动登陆账户
+        # time.sleep(60)
+        # with open('cookies.txt', 'w') as cookief:
+        #     # 将cookies保存为json格式
+        #     cookief.write(json.dumps(driver.get_cookies()))
+        driver.get('https://passport.bilibili.com/ajax/miniLogin/minilogin')
+        with open('cookies.txt', 'r') as cookief:
+            # 使用json读取cookies 注意读取的是文件 所以用load而不是loads
+            cookieslist = json.load(cookief)
+            for cookie in cookieslist:
+                driver.add_cookie(cookie)
+        # # 刷新页面
+        driver.refresh()
         driver.get(href + '/video')
         html = driver.execute_script("return document.documentElement.outerHTML")  # 必须执行js
         time.sleep(2)
@@ -120,6 +157,7 @@ def getUpInfoBySelenium(href, mid):
         fans = soup.find('p', 'n-data-v space-fans').text  # 粉丝数
         div = soup.find('div', 'n-statistics')
         try:
+            #这两个数据登录才有显示
             praise = div.contents[2].find('p', 'n-data-v').text  # 获赞数
             view = div.contents[3].find('p', 'n-data-v').text  # 播放数
         except:
@@ -130,7 +168,10 @@ def getUpInfoBySelenium(href, mid):
         dict = {}
         for each in a:
             lstrip = each.text.lstrip()
-            dict[lstrip[0:2]] = int(lstrip[2:])
+            try:
+                dict[lstrip[0:2]] = int(lstrip[2:])
+            except:
+                dict[lstrip[0:3]] = int(lstrip[3:])
         maxArea = max(zip(dict.values(), dict.keys()))
         print("关注数" + str(focus), "粉丝数" + str(fans), "获赞数" + str(praise),
               "播放数：" + str(view),"主分区：" + maxArea[1] + "区")
@@ -144,7 +185,7 @@ def getUpInfoBySelenium(href, mid):
             db.commit()
         except:
             db.rollback()
-        db.close();
+        db.close()
     finally:
         driver.close()
 
@@ -183,10 +224,10 @@ title = json_obj['data']['official']['title']
 print("up主uid："+str(up_mid),"用户名："+name,"性别："+sex,
       "留言："+sign,"生日："+birthday,"称号："+title)
 insertUp(str(up_mid),name,sex,sign,birthday,title)
-try:
-    getUpInfoBySelenium(href,str(up_mid)) # 打印粉丝数、播放数、分区等(selenium)
-except:
-    print("无法打印up主数据")
+# try:
+getUpInfoBySelenium(href,str(up_mid)) # 打印粉丝数、播放数、分区等(selenium)
+# except:
+#     print("无法打印up主数据")
 print("Ta的粉丝：")
 print("----------------")
 for i in range(0, 30):
