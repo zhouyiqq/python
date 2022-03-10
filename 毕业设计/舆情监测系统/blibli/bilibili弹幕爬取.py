@@ -134,7 +134,7 @@ def getDanMu(bv_url, headers=None, getXMlUrlFun=None, getDanmuFunc=None, save_bo
 
 if __name__ == '__main__':
     # 以下代码用于测试
-    bv_url = 'https://www.bilibili.com/video/BV1eb4y1W7Uj'
+    bv_url = 'https://www.bilibili.com/video/av339530147/'
     need = getDanMu(bv_url, save_bool=True)
     need.to_csv("danmu.csv")
     print(need)

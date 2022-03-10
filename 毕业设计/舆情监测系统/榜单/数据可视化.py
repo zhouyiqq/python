@@ -8,7 +8,7 @@ import matplotlib as mpl
 mpl.rcParams['font.sans-serif'] = ['SimHei']    # 指定默认字体
 mpl.rcParams['font.serif'] = ['SimHei']
 mpl.rcParams['axes.unicode_minus'] = False
-df = pd.read_excel(r"./tophub2022-03-08.xlsx")
+df = pd.read_excel(r"./tophub2022-03-10.xlsx")
 ###############################################################################################
 """
 # plt.xlabel(name)
@@ -19,7 +19,7 @@ df["source"].value_counts().sort_values().plot.bar(figsize=(20,10))
 plt.show()"""
 ##############################################################################
 choice = ["微博","知乎","微信","百度","哔哩哔哩","知乎","微信读书","抖音"]
-index = 3
+index = 4
 i=1
 data =[]
 for source,contect,heat in zip(df.source,df.content,df.heat):

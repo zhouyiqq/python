@@ -1,10 +1,8 @@
 ﻿# _*_coding:utf_8_*_
 # 代码仓库 was created by zy on 2022/3/10 11:00
-
 import requests as r
 import re
 import json
-
 
 def __getJSONUrl(reponse_text):
     '''
@@ -88,6 +86,9 @@ def getCommList(bv_url, headers=None, getXMlUrl_func=None, getPageInfo_func=None
     data_comm_all = []
 
     for i in range(1, info['page_count'] + 1):
+        if i==20:
+            break
+        print("响应")
         # 获取未提取有用信息的评论响应
         comm_raw = r.get(xml_url.format(i), headers=headers)
 
