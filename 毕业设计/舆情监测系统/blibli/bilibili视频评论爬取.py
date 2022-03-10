@@ -25,7 +25,7 @@ def enc(x):#这个代码是oid转bv
     return ''.join(r)
 # 其中参数 pn 是评论的页数 ； oid 就是视频网址后面的 av那一串数字；sort一看就清楚是排序方式，0是按时间排序，2是按热度
 comment_list = []  # 创建空列表
-bv = "BV1xa411h7aM"
+bv = "BV1pR4y1G7UC"#身后
 oid = dec(bv)
 for i in range(10):  # 动态下面的评论总共有115页
     sort = 2

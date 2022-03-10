@@ -10,8 +10,8 @@ mpl.rcParams['axes.unicode_minus'] = False
 def show(df,kind,title):
     df.plot(kind=kind, title=title)
     plt.show()
-article = open(r'../data/cut.txt','rb').read()
-dele = {'。','！','？','的','“','”','（','）',' ','》','《','，'}
+article = open(r'情感分析数据.txt','rb').read()
+dele = {'。','！','？','的','“','”','（','）',' ','》','《','，',"\r\n"}
 jieba.add_word('大数据')
 words = list(jieba.cut(article))
 articleDict = {}
@@ -21,7 +21,7 @@ for w in articleSet:
         articleDict[w] = words.count(w)
 articlelist = sorted(articleDict.items(),key = lambda x:x[1], reverse = True)
 data = []
-for i in range(15):
+for i in range(50):
     data.append(list(articlelist[i]))
     # print(articlelist[i][0],articlelist[i][1])
 df = pd.DataFrame(data,columns=["关键词","数量"],index=[_[0] for _ in data])

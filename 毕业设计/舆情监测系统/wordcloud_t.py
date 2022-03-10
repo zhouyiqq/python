@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import os
 import jieba
 from wordcloud import ImageColorGenerator
-file_name = "./data/cut.txt"
+file_name = "./词频统计与情感分析/情感分析数据.txt"
 pic_name = "./data/elsa.jpg"  # 你自己是什么文件名你就写什么文件名
 # 判断文件是否存在
 if os.path.exists(file_name):
@@ -16,9 +16,10 @@ if os.path.exists(file_name):
         # print(content)
         if content:  # 判断文本内容是否为空
             # 进行分词处理c 返回的是一个对象 需要使用"".join进行拼接
-            # cut_text = jieba.cut(content)
-            word = content
-            # word = " ".join(content)  # 拼接
+            cut_text = jieba.cut(content)
+            # word = content
+            content = cut_text
+            word = " ".join(content)  # 拼接
     print(word)
     img = np.array(Image.open(pic_name))  # 读取图片
     img_colors =ImageColorGenerator(img)
