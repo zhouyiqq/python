@@ -27,7 +27,7 @@ def enc(x):#这个代码是oid转bv
 comment_list = []  # 创建空列表
 bv = "BV1pR4y1G7UC"#身后
 oid = dec(bv)
-for i in range(10):  # 动态下面的评论总共有115页
+for i in range(5):  # 动态下面的评论总共有115页
     sort = 2
     # oid = "378081993930152813"
     url = f'https://api.bilibili.com/x/v2/reply?jsonp=jsonp&pn={str(i)}&type=1&oid={oid}&sort={sort}'  # 动态评论的接口（请大家不要恶意攻击造成负荷）
@@ -47,4 +47,5 @@ for r in comment_list:
     comment_txt = open(r'{}.txt'.format(bv), 'w', encoding='utf-8')  # 创建txt文本
     for r in comment_list:
         comment_txt.write(r+"\n")  # 写入txt文本
+        # comment_txt.write('-' * 10+"\n")
     comment_txt.close()

@@ -1,4 +1,6 @@
 import sys
+
+import pandas
 from selenium.webdriver.support.ui import WebDriverWait
 import requests
 import bs4
@@ -156,6 +158,14 @@ def getUpInfoBySelenium(href, mid):
         focus = soup.find('p', 'n-data-v space-attention').text  # 关注数
         fans = soup.find('p', 'n-data-v space-fans').text  # 粉丝数
         div = soup.find('div', 'n-statistics')
+        # < a class ="title" href="//www.bilibili.com/video/BV14F411b7vm" target="_blank" title="【鬼谷说】神经演化（其一）：风起青萍之末" > 【鬼谷说】神经演化（其一）：风起青萍之末 < / a > < / div > < div class ="desc" title="动物之所以是动物，也许从我们的单细胞祖先那里就已经注定了" >
+        suoyoushipin = soup.findAll(name="a", attrs={"class":"title","target":"_blank"})
+        data = []
+        for dict in suoyoushipin:
+            data.append(dict.attrs)
+        df = pandas.DataFrame(data)
+        df.to_csv("up所有视频.csv")
+        print("视频爬完")
         try:
             #这两个数据登录才有显示
             praise = div.contents[2].find('p', 'n-data-v').text  # 获赞数
@@ -229,6 +239,7 @@ print("up主uid："+str(up_mid),"用户名："+name,"性别："+sex,
 insertUp(str(up_mid),name,sex,sign,birthday,title)
 # try:
 getUpInfoBySelenium(href,str(up_mid)) # 打印粉丝数、播放数、分区等(selenium)
+sys.exit(0)
 # except:
 #     print("无法打印up主数据")
 print("Ta的粉丝：")
