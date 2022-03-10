@@ -1,0 +1,72 @@
+1646917813795	geckodriver	INFO	Listening on 127.0.0.1:22317
+1646917816856	mozrunner::runner	INFO	Running command: "D:\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "22318" "-no-remote" "-profile" "C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofilepihxLm"
+*** You are running in headless mode.
+1646917817206	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofilepihxLm\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:22318/devtools/browser/3e4e4e57-bd73-4fcb-8bbf-4fc05305dfe1
+1646917818318	Marionette	INFO	Listening on port 22323
+1646917818412	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+1646917988104	geckodriver	INFO	Listening on 127.0.0.1:22640
+1646917991178	mozrunner::runner	INFO	Running command: "D:\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "22641" "-no-remote" "-profile" "C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofilegJJbr8"
+*** You are running in headless mode.
+1646917991485	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zy\\AppData\\Local\\Temp\\rust_mozprofilegJJbr8\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:22641/devtools/browser/f972ef5a-a7a9-41d4-8164-7d53146bc00a
+1646917992614	Marionette	INFO	Listening on port 22646
+1646917992719	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js, line 1: WebGL context was lost.
