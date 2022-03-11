@@ -3,7 +3,6 @@
 import winsound
 from tkinter import *
 import tkinter.filedialog, winsound
-
 # 创建主窗口
 win = Tk()
 win.title(string="处理声音")

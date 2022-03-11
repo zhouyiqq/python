@@ -10,7 +10,7 @@ mpl.rcParams['axes.unicode_minus'] = False
 def show(df,kind,title):
     df.plot(kind=kind, title=title)
     plt.show()
-article = open(r'情感分析数据.txt','rb').read()
+article = open(r'../data/HPV.csv','rb').read()
 dele = {'。','！','？','的','“','”','（','）',' ','》','《','，',"\r\n"}
 jieba.add_word('大数据')
 words = list(jieba.cut(article))
