@@ -1,3 +1,4 @@
+﻿# _*_coding:utf_8_*_
 """
 Best-First Searching
 @author: huiming zhou
@@ -8,12 +9,15 @@ import sys
 import math
 import heapq
 
-sys.path.append(os.path.dirname(os.path.abspath(__file__)) +
-                "/../../Search_based_Planning/")
+# sys.path.append(os.path.dirname(os.path.abspath(__file__)) +
+#                 "/../../Search_based_Planning/")
+#
+# from Search_2D import plotting, env
+# from Search_2D.Astar import AStar
 
-from Search_2D import plotting, env
-from Search_2D.Astar import AStar
 
+import plotting, env
+from Astar import AStar
 
 class BestFirst(AStar):
     """BestFirst set the heuristics as the priority 

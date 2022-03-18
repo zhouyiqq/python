@@ -1,3 +1,4 @@
+﻿# _*_coding:utf_8_*_
 """
 Breadth-first Searching_2D (BFS)
 @author: huiming zhou

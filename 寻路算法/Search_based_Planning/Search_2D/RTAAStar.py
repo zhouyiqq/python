@@ -1,3 +1,4 @@
+﻿# _*_coding:utf_8_*_
 """
 RTAAstar 2D (Real-time Adaptive A*)
 @author: huiming zhou
@@ -8,11 +9,11 @@ import sys
 import copy
 import math
 
-sys.path.append(os.path.dirname(os.path.abspath(__file__)) +
-                "/../../Search_based_Planning/")
-
-from Search_2D import queue, plotting, env
-
+# sys.path.append(os.path.dirname(os.path.abspath(__file__)) +
+#                 "/../../Search_based_Planning/")
+#
+# from Search_2D import queue, plotting, env
+import queue, plotting, env
 
 class RTAAStar:
     def __init__(self, s_start, s_goal, N, heuristic_type):

@@ -1,8 +1,8 @@
-"""
+﻿"""
 Dijkstra 2D
 @author: huiming zhou
 """
-
+# _*_coding:utf_8_*_
 import os
 import sys
 import math

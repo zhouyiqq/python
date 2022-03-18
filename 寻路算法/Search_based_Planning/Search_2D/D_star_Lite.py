@@ -1,3 +1,4 @@
+﻿# _*_coding:utf_8_*_
 """
 D_star_Lite 2D
 @author: huiming zhou

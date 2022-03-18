@@ -1,3 +1,4 @@
+﻿# _*_coding:utf_8_*_
 """
 Bidirectional_a_star 2D
 @author: huiming zhou
@@ -13,7 +14,6 @@ import heapq
 #
 # from Search_2D import plotting, env
 import plotting, env
-
 class BidirectionalAStar:
     def __init__(self, s_start, s_goal, heuristic_type):
         self.s_start = s_start

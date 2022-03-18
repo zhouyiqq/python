@@ -1,3 +1,4 @@
+﻿# _*_coding:utf_8_*_
 """
 LRTA_star 2D (Learning Real-time A*)
 @author: huiming zhou
