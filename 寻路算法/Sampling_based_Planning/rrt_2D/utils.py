@@ -1,3 +1,4 @@
+﻿# _*_coding:utf_8_*_
 """
 utils for collision check
 @author: huiming zhou

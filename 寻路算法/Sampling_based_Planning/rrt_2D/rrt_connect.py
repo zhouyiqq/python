@@ -1,3 +1,4 @@
+﻿# _*_coding:utf_8_*_
 """
 RRT_CONNECT_2D
 @author: huiming zhou
