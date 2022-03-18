@@ -125,7 +125,8 @@ def draw_grid(x,y,gridwith=1):
     plt.yticks(y)
     plt.grid(c ="r")
 
-def show():
+def show(ax):
+    ax.autoscale_view()
     plt.show()
 
 
