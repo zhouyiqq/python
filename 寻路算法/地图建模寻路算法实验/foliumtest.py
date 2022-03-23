@@ -4,9 +4,10 @@ import json
 import pandas as pd
 
 # define the world map
-world_map = folium.Map()
-# display world map
-world_map
+# world_map = folium.Map()
+# print(folium.__version__)
+# # display world map
+# world_map
 # df = pd.read_csv(r'plotly-choropleth-mapbox-demo-master/data.csv')
 # # read china border
 # with open(r"plotly-choropleth-mapbox-demo-master/china_province.geojson", encoding='utf8') as f:
@@ -27,3 +28,23 @@ world_map
 # ).add_to(chn_map)
 #
 # folium.LayerControl().add_to(chn_map)
+bj_map = folium.Map(location=[39.93, 115.40], zoom_start=12, tiles='Stamen Terrain')
+
+folium.Marker(
+    location=[39.95, 115.33],
+    popup='Mt. Hood Meadows',
+    icon=folium.Icon(icon='cloud')
+).add_to(bj_map)
+
+folium.Marker(
+    location=[39.96, 115.32],
+    popup='Timberline Lodge',
+    icon=folium.Icon(color='green')
+).add_to(bj_map)
+
+folium.Marker(
+    location=[39.93, 115.34],
+    popup='Some Other Location',
+    icon=folium.Icon(color='red', icon='info-sign')
+).add_to(bj_map)
+bj_map
