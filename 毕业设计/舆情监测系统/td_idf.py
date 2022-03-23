@@ -18,7 +18,7 @@ def labels_to_original(labels, forclusterlist):
 
 if __name__ == '__main__':
     # 分类数
-    num = 8
+    num = 4
 
     # 读取语料库
     corpus = []

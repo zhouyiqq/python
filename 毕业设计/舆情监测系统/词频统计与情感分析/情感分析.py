@@ -82,8 +82,8 @@ if __name__ == '__main__':
     review=[]
     with open("情感分析数据.txt", "r", encoding='utf_8') as f:
         line = f.readline()
-        while line:
-        # for i in range(10):
+        # while line:
+        for i in range(30):
             review.append(line)
             # print(line)
             line = f.readline()
