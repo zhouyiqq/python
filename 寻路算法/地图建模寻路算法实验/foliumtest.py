@@ -47,4 +47,3 @@ folium.Marker(
     popup='Some Other Location',
     icon=folium.Icon(color='red', icon='info-sign')
 ).add_to(bj_map)
-bj_map
