@@ -45,11 +45,6 @@ def generate_grid(lx, ly, pm, fm, cm, resolution, offsetx, offsety,external=0.1)
     return res
 
 if __name__ == "__main__":
-       # log.critical("你好")
-       # print('\033[1;35;0m字体变色，但无背景色 \033[0m')  # 有高亮 或者 print('\033[1;35m字体有色，但无背景色 \033[0m')
-       # print('\033[1;45m 字体不变色，有背景色 \033[0m')  # 有高亮
-       # print('\033[1;35;46m 字体有色，且有背景色 \033[0m')  # 有高亮
-       # print('\033[0;35;46m 字体有色，且有背景色 \033[0m')  # 无高亮
        # polys = [[vg.Point(0.0,1.0), vg.Point(3.0,1.0), vg.Point(1.5,4.0)],
        #        [vg.Point(4.0,4.0), vg.Point(7.0,4.0), vg.Point(5.5,8.0)]]
        # g = vg.VisGraph()

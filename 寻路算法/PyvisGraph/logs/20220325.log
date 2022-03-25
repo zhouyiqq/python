@@ -1,2 +1,3 @@
 2022-03-25 14:26:49,542-logger.py[line:38]-pid:3752-tid:17120-INFO:你好
 2022-03-25 14:28:08,014-logger.py[line:48]-pid:15640-tid:19016-CRITICAL:你好
+2022-03-25 15:00:34,799-logger.py[line:49]-pid:22120-tid:23232-CRITICAL:[31m你好[0m
