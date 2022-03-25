@@ -7,44 +7,49 @@ sys.path.append("C:/Users/Administrator/python/")
 from Putils import logger as log
 from Putils import plotutil as  plt
 from shapely.geometry import Polygon, Point,LineString
+from shapely.geometry import box
 import pyvisgraph as vg
-
+import numpy as np
 def generate_grid(lx, ly, pm, fm, cm, resolution, offsetx, offsety,external=0.1):
-    # ax = plt.create_ax()
-    res = np.zeros((lx, ly))
-    for i in range(0, lx):
-        for j in range(0, ly):
-            current_x = i * resolution + offsetx
-            current_y = j * resolution + offsety
-            bb = box(current_x, current_y, current_x + resolution, current_y + resolution)
-            # plt.draw_polygon(ax, bb, "r", 'w', 1)
-            if bb.within(pm):
-                # plt.draw_polygon(ax, bb, "m", 'w', 1)
-                    # plt.draw_polygon(ax, bb, "k", 'w', 1)
-                for jian in fm:
-                    if bb.intersects(jian.buffer(external,cap_style=2, join_style=2)):
-                        # xs_2, ys_2 = bb.boundary.xy
-                        # plt.plot(xs_2, ys_2, 'chocolate')
-                        # plt.draw_polygon(ax, bb, "k", 'w', 1)
-                        res[i][j] = 1
-                        break
-                for he in cm:
-                    if bb.intersects(he):
-                        # xs_2, ys_2 = bb.boundary.xy
-                        # plt.plot(xs_2, ys_2, 'chocolate')
-                        # plt.draw_polygon(ax, bb, "r", 'w', 1)
-                        res[i][j] = 0
-                        break
-                if bb.intersects(pm.boundary.buffer(1)):
-                    res[i][j] = 1
-                # 最终合理的条件
-                # if not tag:
-                #     res[i][j] = 1
-    # ax.autoscale_view()
-    # plt.show()
-    return res
+       """
+       lx:地图的长, ly：地图的宽, pm：, fm, cm, resolution, offsetx, offsety,external=0.1
+       """
+       ax = plt.create_ax()
+       res = np.zeros((lx, ly))
+       for i in range(0, lx):
+              for j in range(0, ly):
+                     current_x = i * resolution + offsetx
+                     current_y = j * resolution + offsety
+                     bb = box(current_x, current_y, current_x + resolution, current_y + resolution)
+                     plt.draw_polygon(ax, bb, "r", 'w', 1)
+                     if bb.within(pm):
+                            # plt.draw_polygon(ax, bb, "m", 'w', 1)
+                            plt.draw_polygon(ax, bb, "k", 'w', 1)
+                            for jian in fm:
+                                   if bb.intersects(jian.buffer(external,cap_style=2, join_style=2)):
+                                          # xs_2, ys_2 = bb.boundary.xy
+                                          # plt.plot(xs_2, ys_2, 'chocolate')
+                                          plt.draw_polygon(ax, bb, "k", 'w', 1)
+                                          res[i][j] = 1
+                                          break
+                            for he in cm:
+                                   if bb.intersects(he):
+                                          # xs_2, ys_2 = bb.boundary.xy
+                                          # plt.plot(xs_2, ys_2, 'chocolate')
+                                          plt.draw_polygon(ax, bb, "r", 'w', 1)
+                                          res[i][j] = 0
+                                          break
+                            if bb.intersects(pm.boundary.buffer(1)):
+                                   res[i][j] = 1
+                            # 最终合理的条件
+                            # if not tag:
+                     #     res[i][j] = 1
+       ax.autoscale_view()
+       plt.show()
+       return res
 
 if __name__ == "__main__":
+       generate_grid(lx, ly, pm, fm, cm, resolution, offsetx, offsety,external=0.1)
        # polys = [[vg.Point(0.0,1.0), vg.Point(3.0,1.0), vg.Point(1.5,4.0)],
        #        [vg.Point(4.0,4.0), vg.Point(7.0,4.0), vg.Point(5.5,8.0)]]
        # g = vg.VisGraph()
