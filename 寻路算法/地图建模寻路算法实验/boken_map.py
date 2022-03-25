@@ -1,6 +1,7 @@
 ﻿import json
 import random
-
+import sys
+import os
 from bokeh.plotting import curdoc, figure
 from bokeh.models import GeoJSONDataSource
 from bokeh.io import show

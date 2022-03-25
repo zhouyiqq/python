@@ -4,13 +4,14 @@
 import logging
 import os
 import time
+from colorama import Fore, Style
 #创建日志
 # logging.getLogger("sort_algonrithm").setLevel(logging.CRITICAL)
 logger = logging.getLogger("zy")
 logger.setLevel(logging.DEBUG)
 #创建处理器
 log_time = time.strftime("%Y%m%d",time.localtime(time.time()))
-log_path = os.path.join(os.getcwd(), 'logger/logs/')
+log_path = os.path.join(os.getcwd(), 'logs/')
 if not os.path.exists(log_path):
     os.mkdir(log_path)
 log_file_name = log_path + log_time + ".log"
@@ -28,23 +29,23 @@ console_hander.setFormatter(console_formatter)
 logger.addHandler(console_hander)
 def debug(msg,*args):
     if len(args)>0:
-        logger.debug(msg.format(*args))
+        logger.debug(Fore.WHITE+msg.format(*args)+Style.RESET_ALL)
     else:
-        logger.debug(msg)
+        logger.debug(Fore.WHITE+msg+Style.RESET_ALL)
 def info(msg,*args):
     if len(args)>0:
-        logger.info(msg.format(*args))
+        logger.info(Fore.GREEN+msg.format(*args)+Style.RESET_ALL)
     else:
-        logger.info(msg)
+        logger.info(Fore.GREEN+msg+Style.RESET_ALL)
 def waring(msg,*args):
     if len(args)>0:
-        logger.warning(msg.format(*args))
+        logger.warning(Fore.RED+msg.format(*args)+Style.RESET_ALL)
     else:
-        logger.warning(msg)
+        logger.warning(Fore.RED+msg+Style.RESET_ALL)
 def critical(msg,*args):
     if len(args)>0:
-        logger.critical(msg.format(*args))
+        logger.critical(Fore.RED+msg.format(*args)+Style.RESET_ALL)
     else:
-        logger.critical(msg)
+        logger.critical(Fore.RED+msg+Style.RESET_ALL)
 if __name__ == "__main__":
-    waring("警告")
+    info("警告")

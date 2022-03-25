@@ -358,7 +358,7 @@ def find_path():
     e_x, e_y = get_end_XY()
     # A*算法
     a_star = A_Star(tkinter.Tk(), s_x, s_y, e_x, e_y)
-    a_star.root.mainloop()
+    # a_star.root.mainloop()
     a_star.find_path()
     searched = a_star.get_searched()
     path = a_star.path
@@ -371,7 +371,7 @@ def find_path():
     print(u"路径长度:%d" % (len(path)))
     print(u"搜索过的区域:%d" % (len(searched)))
     a_star = A_Star(tkinter.Tk(), s_x, s_y, e_x, e_y)
-    a_star.root.mainloop()
+    # a_star.root.mainloop()
 
 
 # ----------- 程序的入口处 -----------

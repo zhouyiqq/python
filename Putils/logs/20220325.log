@@ -1,0 +1,4 @@
+2022-03-25 14:25:57,369-logger.py[line:43]-pid:16896-tid:9104-WARNING:警告
+2022-03-25 14:49:02,455-logger.py[line:43]-pid:24284-tid:4748-WARNING:警告
+2022-03-25 14:53:11,940-logger.py[line:44]-pid:7616-tid:3312-WARNING:[31m警告[0m
+2022-03-25 14:57:07,754-logger.py[line:39]-pid:1792-tid:18876-INFO:[32m警告[0m
