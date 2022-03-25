@@ -1,0 +1,18 @@
+Accept: application/json
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxNTMsInVzZXJfbmFtZSI6IndhbmdtaWFuMDUiLCJzY29wZSI6WyJhbGwiXSwibmlja19uYW1lIjoi546L5qOJIiwicm9sZV9jb2RlIjoiZGVzaWduIiwiZXhwIjoxNjQwOTI0OTE2LCJhdXRob3JpdGllcyI6WyJST0xFX2Rlc2lnbiJdLCJqdGkiOiJjZTExMzRhMC1jZmQ1LTRhMmUtOWNkNS00ZTRkZGU3ZmJmNTQiLCJjbGllbnRfaWQiOiJjYXJiYXJuIn0.RyceGw-QGYiWMvKJi-RsuQN-qVnwnqB5fni9ZA5du6QN9NwXUPkTzxKzEekZK0ipGO27ZbQq_m7Dnw8iu7zlFIk5t-Phm4Zw_4SdIjnpDeqch15a0IsIw2AZKfcQKIjkEFlVJ1RyN1uv-Cy6LrS8oFRDKlDN1xEoVZPiNqg0YjQkmpcO64deqhsZKq9io7HY6AZjc5fdNukoWBcqI-CUYIhxA_0AAm4MxpnYSj8kzWJOBi_VMHu50mF-DF01Hy5hTiAEysTLWL1dSkhXIpRW-lqCCnGHGiU0RA8MaIiwy4OdirJytIlFE1zPHO72uWpwo7aZbvfkYWLaMUYR1kxwjA
+Connection: keep-alive
+Content-Length: 33
+Content-Type: application/json;charset=UTF-8
+Cookie: refresh_token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxNTMsInVzZXJfbmFtZSI6IndhbmdtaWFuMDUiLCJzY29wZSI6WyJhbGwiXSwiYXRpIjoiMTlkYmRkNDAtYjg3MC00YjM2LWFhMzAtZjNmOTliNjFlNDBlIiwibmlja19uYW1lIjoi546L5qOJIiwicm9sZV9jb2RlIjoiZGVzaWduIiwiZXhwIjoxNjQwOTI0OTE2LCJhdXRob3JpdGllcyI6WyJST0xFX2Rlc2lnbiJdLCJqdGkiOiI4ODNjNjJhZS0xYWEzLTRjODktOTU0My0zMWE3ZGZkMmUwNjciLCJjbGllbnRfaWQiOiJjYXJiYXJuIn0.Xrf0R69ewtigcf5Zgi3oHv8ZWFn1iMyqlTW2AD3BsL_gawyN8mo5yseHvJakHNFKUwU7evCviWQUzxfC6g1LCHRVmaa7vdhULmdiNp_BGr_HRDgd-sQqrgwNiLkWmLNodiIvXg-eLVS89gTkJRImWeZSeVcNH6R-UalRYRPNwjZb40TTnm7ZEx7L9SOPTTKv0bXnLGTQovpXHdhzNH306LHykkR3_cAIuyOXb-9EBwJ7LOUsJaLGG5UmY54tI-B8JG6HIJLrqZCRoeOsXfiBTsczGZ9-ES00nJNIiEV6wy2K7WiAQbjTl6uYfbPV14rvPGD6nwpSz2KtGPL0HXqVGw
+Host: ipark.bgy.com.cn
+Origin: https://ipark.bgy.com.cn
+Referer: https://ipark.bgy.com.cn/personalCollection/projectdetail?FolderID=1771
+sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36

@@ -1,24 +1,24 @@
 # _*_coding:utf_8_*_
 # 代码仓库 was created by zy on 2022/1/26 9:14
-import requests
-from bs4 import BeautifulSoup
-# import lxml
-import random
-import time
-import csv
-from time import strftime
-from wordcloud import WordCloud
-from PIL import Image
-import numpy
-import jieba.analyse
-import jieba
+# import requests
+# from bs4 import BeautifulSoup
+# # import lxml
+# import random
+# import time
+# import csv
+# from time import strftime
+# from wordcloud import WordCloud
+# from PIL import Image
+# import numpy
+# import jieba.analyse
+# import jieba
+# # import pandas as pd
 # import pandas as pd
-import pandas as pd
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 #
 # list_content = []
 # list_t = []
-#
+#测试
 #
 # # list = ["name","type","value","date"]
 # # list_content.append(list)
@@ -191,9 +191,9 @@ import matplotlib.pyplot as plt
 #     plt.show()
 #     pass
 
-
-if __name__ == '__main__':
-    req = requests.get(url="http://www.youerw.com/yanjiu/lunwen_71392.html")
+#
+# if __name__ == '__main__':
+#     req = requests.get(url="http://www.youerw.com/yanjiu/lunwen_71392.html")
     # url = "https://s.weibo.com/top/summary?cate=realtimehot"
     # print("*********************微博热搜榜*********************")
     # # 获取微博热搜数据
