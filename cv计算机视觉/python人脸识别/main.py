@@ -5,8 +5,7 @@ from tkinter.messagebox import *
 # python弹窗
 from tkinter import *
 # gui编程
-import numpy as np
-from PIL import Image, ImageTk, ImageDraw, ImageFont
+from PIL import Image, ImageTk, ImageFont
 # 图像处理库
 import os
 # 多种操作系统接口
@@ -21,8 +20,6 @@ from pywin.framework.editor import frame
 import face_feature
 # 人脸特征点定位
 import shibie
-import _thread
-import time
 import face_recognition as fr
 
 p = None
