@@ -1,4 +1,4 @@
-import winsound
+# import winsound
 from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -7,6 +7,7 @@ import numpy as np
 if __name__ == '__main__':
     datas = np.array([[1,1],[2,3],[4,5],[2,1],[-1,-1],[-2,-3],[-4,-5],[-2,-1]])
     x,y = datas[:,0],datas[:,1]
+    # infile = r"./music/乌蒙山.wav"
     # infile = r"./music/乌蒙山.wav"
     # flags = winsound.SND_FILENAME | winsound.SND_LOOP | winsound.SND_ASYNC
     # winsound.PlaySound(infile, flags)

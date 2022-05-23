@@ -5,5 +5,5 @@ from matplotlib import pyplot as plt
 title = input("请输入搜索关键词：")
 df_index = ak.weibo_index(title)
 df_index.plot()
-plt.savefig("./picture/worldcloud.png")  # 保存词云图到本地
+# plt.savefig("./picture/worldcloud.png")  # 保存词云图到本地
 plt.show()

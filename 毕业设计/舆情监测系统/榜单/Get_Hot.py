@@ -1,5 +1,5 @@
 # coding:gbk
-# 代码仓库 was created by zy on 2022/2/15 21:32
+# 锟斤拷锟斤拷挚锟� was created by zy on 2022/2/15 21:32
 import datetime
 import os
 import pprint
@@ -23,17 +23,17 @@ class GetHot():
         df = pandas.DataFrame()
         df.to_excel(path, index=False)
         res = pandas.read_excel(path,engine=None)
-        # text = ["微博","知乎","微信","百度"]
+        # text = ["微锟斤拷","知锟斤拷","微锟斤拷","锟劫讹拷"]
         # res = pandas.DataFrame()
-        # # 显示所有列
+        # # 锟斤拷示锟斤拷锟斤拷锟斤拷
         # pandas.set_option('display.max_columns', None)
-        # # 显示所有行
+        # # 锟斤拷示锟斤拷锟斤拷锟斤拷
         # pandas.set_option('display.max_rows', None)
-        # # 设置value的显示长度为100，默认为50
+        # # 锟斤拷锟斤拷value锟斤拷锟斤拷示锟斤拷锟斤拷为100锟斤拷默锟斤拷为50
         # pandas.set_option('max_colwidth', 100 )
         res = self.get_node_data(res, data)
         # pprint.pprint(res)
-        print("数据处理完毕")
+        print("锟斤拷锟捷达拷锟斤拷锟斤拷锟�")
         res.to_excel(path)
         # input()
     def getHtml(self):
@@ -49,17 +49,17 @@ class GetHot():
     def get_node_data(self,df, nodes):
         # now = int(time.time())
         for node in nodes:
-            #是按照结点分的
+            #锟角帮拷锟秸斤拷锟街碉拷
             # print(node)
             # print("#"*200)
-            # if text == "微博":
+            # if text == "微锟斤拷":
             source = node.find('div', class_='cc-cd-lb').text.strip()
             messages = node.find('div', class_='cc-cd-cb-l nano-content').find_all('a')
             for message in messages:
                 content = message.find('span', class_='t').text.strip()
                 heat = message.find('span', class_='e').text.strip()
                 # if source == text:
-                # reg = '「.+?」(.+)'
+                # reg = '锟斤拷.+?锟斤拷(.+)'
                 # content = re.findall(reg, content)
                 # print("#"*15)
                 # print(content)
